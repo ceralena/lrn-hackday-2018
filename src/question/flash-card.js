@@ -6,7 +6,7 @@ LearnosityAmd.define([
 function (_, $, template) {
 
     function CustomQuestion(init, utils) {
-        this.events = initOptions.events;
+        this.events = init.events;
 
         init.$el.html(template({}));
 
