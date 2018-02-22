@@ -10,14 +10,21 @@ LearnosityAmd.define(['underscore', 'jquery', '/question/flash-card-template.js'
     }
 
     _.extend(CustomQuestionScorer.prototype, {
-        isValid: function () {},
+        isValid: function () {
+            return this.response.toLowerCase() === this.question.valid_response.toLowerCase();
+        },
 
-        score: function () {},
+        score: function () {
+            return this.isValid() ? this.maxScore() : 0;
+        },
 
-        maxScore: function () {}
+        maxScore: function () {
+            return this.question.score || 1;
+        }
     });
 
     return {
-        Question: CustomQuestion
+        Question: CustomQuestion,
+        Scorer: CustomQuestionScorer
     };
 });

@@ -56,9 +56,10 @@ $items = [
 
 $questions = [
 	[
-	    "type" => "custom",
+	    'type' => 'custom',
 	    'response_id' => $uniqueResponseIdSuffix.'_Flash1',
-	    'js' => '/question/flash-card.js'
+	    'js' => '/question/flash-card.js',
+	    'valid_response' => 'Beer'
 	]
 ];
 
