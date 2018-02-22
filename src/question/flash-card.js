@@ -6,12 +6,21 @@ LearnosityAmd.define([
 function (_, $, template) {
 
     function CustomQuestion(init, utils) {
+        var facade = init.getFacade();
+
         this.events = init.events;
+
+        // this.showingAnswer = false;
 
         init.$el.html(template({
             front: init.question.front_title,
             back: init.question.valid_response
         }));
+
+        init.$el.on('click', function (e) {
+            init.$el.find('.card').toggleClass('flipped');
+            // this.showingAnswer = !this.showingAnswer;
+        });
 
         this.events.trigger('ready');
     }

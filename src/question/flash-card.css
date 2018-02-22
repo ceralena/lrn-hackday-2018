@@ -25,7 +25,7 @@ body {
     background: transparent !important;
 }
 
-.container {
+.card-container {
     width: 300px;
     height: 200px;
     position: relative;
@@ -61,6 +61,7 @@ body {
     font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     color: #47525d;
+    font-size: 3em;
 }
 
 .card .back {
@@ -71,7 +72,5 @@ body {
     transform: rotateY(180deg);
 }
 
-.card .front {
-    font-size: 2em;
-}
+.card .front {}
 
