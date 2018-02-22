@@ -89,7 +89,7 @@ $signedRequest = $init->generate();
     <div class="row">
         <a href="#" class="language-selection">Japanese</a>
         <a href="#" class="language-selection">Spanish</a>
-        <a href="#" class="language-selection">Arabic</a>
+        <a href="#" class="language-selection">French</a>
     </div>
 </div>
 
