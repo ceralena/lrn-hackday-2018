@@ -74,9 +74,9 @@ $request = [
 
 		'questions' => [
 			[
-			    "stimulus" => "<p>[This is the stem.]</p>",
-			    "type" => "longtextV2",
-			    'response_id' => $uniqueResponseIdSuffix.'_Flash1'
+			    "type" => "custom",
+			    'response_id' => $uniqueResponseIdSuffix.'_Flash1',
+			    'js' => '/question/flash-card.js'
 			]
 		]
 	],
