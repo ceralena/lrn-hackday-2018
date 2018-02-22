@@ -1,5 +1,6 @@
 {
     "require": {
-        "learnosity/learnosity-sdk-php": "^0.8.2"
+        "learnosity/learnosity-sdk-php": "^0.8.2",
+        "aws/aws-sdk-php": "^3.52"
     }
 }

@@ -5,6 +5,17 @@ LearnosityAmd.define([
 ],
 function (_, $, template) {
 
+    var questions = {};
+
+    assessApp.on('item:changed', function () {
+        var ids = assessApp.getCurrentItem().response_ids;
+        var question = questions[ids && ids[0]];
+
+        if (question) {
+            question.playLabelAudio()
+        }
+    });
+
 
     $(document).on('keyup', function (e) {
         var code = (e.keyCode ? e.keyCode : e.which);
@@ -27,6 +38,8 @@ function (_, $, template) {
 
         init.events.on('validate', this.onValidate, this);
         init.events.trigger('ready');
+
+        questions[init.question.response_id] = this;
     }
 
     _.extend(CustomQuestion.prototype, {
@@ -37,6 +50,15 @@ function (_, $, template) {
                 front: question.front_title,
                 back: question.valid_response
             }));
+
+            // this.facade.on('all', function (g) {
+            //     console.log(g);
+            // });
+            // debugger;
+
+            // if (this.init.$el.is(':visible')) {
+            //     playAudio('ja', question.front_title);
+            // }
         },
 
         setupDomEvents(e) {
@@ -66,12 +88,19 @@ function (_, $, template) {
                 .toggleClass('correct', valid)
                 .toggleClass('incorrect', !valid)
                 .toggleClass('flipped');
+
+            this.playAudio('en', this.init.question.valid_response);
         },
 
         clearValidation() {
              this.init.$el.find('.card')
                 .removeClass('correct incorrect')
                 .toggleClass('flipped');
+        },
+
+        playAudio(lang, text) {
+            var sound = new Audio(['/speech.php?lang=' + lang + '&text=' + text]);
+            sound.play();
         }
     });
 
