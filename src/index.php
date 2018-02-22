@@ -75,7 +75,7 @@ $request = [
 	'subtitle' => 'Language: ' . $languageConfig['name'],
 	'navigation' => [],
 	'time' => [],
-	'regions' => 'main',
+	'regions' => 'items-only',
 	'configuration' => [
 		'questionsApiVersion' => 'v2',
 	],
@@ -96,14 +96,15 @@ $signedRequest = $init->generate();
 
 ?>
 <!DOCTYPE html>
-
+<html>
 <head>
-   <title>Learnosity Flash Cards</title>
+    <title>Learnosity Flash Cards</title>
+    <link rel="stylesheet" href="question/flash-card.css" />
 </head>
 <body>
 
-<div class='hackday-assess'>
-</div>
+<div class="intro-container"></div>
+<div class="hackday-assess"></div>
 
 <script src="https://assess-au.learnosity.com"></script>
 <script>
@@ -120,3 +121,5 @@ $signedRequest = $init->generate();
 </script>
 
 </body>
+</html>
+
