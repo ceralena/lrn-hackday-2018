@@ -1,4 +1,4 @@
-LearnosityAmd.define(['underscore', 'jquery'], function (_, $) {
+LearnosityAmd.define(['underscore', 'jquery', '/question/flash-card-template.js'], function (_, $, template) {
     function CustomQuestion(initOptions, lrnUtils) {
         this.events = initOptions.events;
 
@@ -6,7 +6,7 @@ LearnosityAmd.define(['underscore', 'jquery'], function (_, $) {
     }
 
     function CustomQuestionScorer() {
-
+        
     }
 
     _.extend(CustomQuestionScorer.prototype, {
