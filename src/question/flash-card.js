@@ -10,7 +10,7 @@ function (_, $, template) {
 
         init.$el.html(template({
             front: init.question.front_title,
-            back: ''
+            back: init.question.valid_response
         }));
 
         this.events.trigger('ready');
