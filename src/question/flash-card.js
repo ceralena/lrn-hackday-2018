@@ -161,9 +161,33 @@ function (_, $, template) {
         this.response = response;
     }
 
+    /**
+     * Remove parenthesized elements from the response as we can't expect the user to input them correctly.
+     * @param response
+     * @returns {string}
+     */
+    function normalizeResponse(response) {
+        const repl = /\s?[\(\[].+?[\)\]]$/;
+        return response.toLowerCase().replace(repl, '');
+    }
+
     _.extend(CustomQuestionScorer.prototype, {
         isValid: function () {
-            return this.response && this.response.toLowerCase() === this.question.valid_response.toLowerCase();
+            if (!this.response) {
+                return false;
+            }
+            let validResponses = this.question.valid_response.split(', ');
+            let isValid = false;
+
+            _.forEach(validResponses, (validResponse) => {
+                if (normalizeResponse(this.response) === normalizeResponse(validResponse)) {
+                    isValid = true;
+                    // returning false breaks the loop
+                    return false;
+                }
+            });
+
+            return isValid;
         },
 
         score: function () {
