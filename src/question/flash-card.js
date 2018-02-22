@@ -19,8 +19,7 @@ function (_, $, template) {
                     question.playLabelAudio();
                 }
             }
-            console.log('question');
-            var interval = setInterval(checkVisibility, 100);
+            var interval = setInterval(checkVisibility, 200);
         }
     });
 
