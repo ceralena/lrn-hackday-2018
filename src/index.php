@@ -7,7 +7,7 @@ require __DIR__ . '/lib/data.php';
 use LearnositySdk\Request\Init;
 use LearnositySdk\Utils\Uuid;
 
-$wordsCount = 10;
+$initialWordsCount = 10;
 
 $domain = $_SERVER['SERVER_NAME'];
 
@@ -35,7 +35,7 @@ $activityId = Uuid::generate(); // TODO(cera) - do we need to infer this too?
 
 $uniqueResponseIdSuffix = Uuid::generate();
 
-$languageData = getItemsQuestions($languageConfig['shortCode'], $uniqueResponseIdSuffix, $wordsCount);
+$languageData = getItemsQuestions($languageConfig['shortCode'], $uniqueResponseIdSuffix, $initialWordsCount);
 
 // define the items
 $items = $languageData['items'];
