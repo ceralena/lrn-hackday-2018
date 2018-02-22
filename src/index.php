@@ -55,6 +55,7 @@ $request = [
     'regions' => 'items-only',
 	'configuration' => [
 		'questionsApiVersion' => 'v2',
+        'shuffle_items' => true,
 	],
 	'items' => $items,
 	'questionsApiActivity' => [
