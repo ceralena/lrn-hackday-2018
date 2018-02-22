@@ -51,7 +51,7 @@ $questions = [
 	    'response_id' => $uniqueResponseIdSuffix.'_Flash1',
 	    'js' => '//localhost:8080/question/flash-card.js',
 	    'custom_type' => 'Flash Card',
-	    'stimulus' => 'Cerveza',
+	    'front_title' => 'Cerveza',
 	    'valid_response' => 'Beer'
 	]
 ];

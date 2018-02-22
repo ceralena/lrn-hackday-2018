@@ -8,7 +8,10 @@ function (_, $, template) {
     function CustomQuestion(init, utils) {
         this.events = init.events;
 
-        init.$el.html(template({}));
+        init.$el.html(template({
+            front: init.question.front_title,
+            back: ''
+        }));
 
         this.events.trigger('ready');
     }

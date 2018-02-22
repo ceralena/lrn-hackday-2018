@@ -2,8 +2,8 @@ LearnosityAmd.define(['underscore'], function (_) {
     return _.template(`
         <div class="container">
           <div class="card">
-            <div class="front">Click to flip</div>
-            <div class="back">Yo, what up?</div>
+            <div class="front"><%= front %></div>
+            <div class="back"><%= back %></div>
           </div>
         </div>
     `);
