@@ -3,7 +3,21 @@
 require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/../config.php';
 
-$voice = $_GET['lang'] === 'ja' ? 'Takumi' : 'Russell';
+// Voices
+
+// Japanese: Mizuki, Takumi
+// French: Mathieu, Celine
+// English: Nicole, Russell
+// Spanish: Miguel, Penelope
+
+$voices = [
+    'en' => 'Russell',
+    'ja' => 'Mizuki',
+    'fr' => 'Celine',
+    'es' => 'Miguel',
+];
+
+$voice = $voices[$_GET['lang']];
 
 
 $credentials    = new \Aws\Credentials\Credentials($awsAccessKeyId, $awsSecretKey);
