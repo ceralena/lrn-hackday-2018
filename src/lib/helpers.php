@@ -25,3 +25,17 @@ function generateSessionId($langauge, $userId) {
 	/ :)
 	*/
 }
+
+function getLanguageConfig($shortLabel) {
+	$languageConfigs = [
+		'ja' => [
+			'name' => 'Japanese'
+		]
+	];
+
+	if (!isset($languageConfigs[$shortLabel])) {
+		throw new \Exception('unknown language label: ' . $shortLabel);
+	}
+
+	return $languageConfigs[$shortLabel];
+}

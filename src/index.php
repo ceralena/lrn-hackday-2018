@@ -22,13 +22,15 @@ if (!isset($_GET['user_id'])) {
 	die();
 }
 
-if (!isset($_GET['language'])) {
-	echo 'need language in query string';
+if (!isset($_GET['lang'])) {
+	echo 'need lang in query string';
 	die();
 }
 
 $userId = $_GET['user_id'];
-$language = $_GET['language'];
+$languageShortLabel = $_GET['lang'];
+
+$languageConfig = getLanguageConfig($languageShortLabel);
 
 // set up the security for the key signing
 $security = [
@@ -38,9 +40,9 @@ $security = [
 	'user_id' => $userId
 ];
 
-// TODO - infer session ID from hash of user + language
 // $sessionId = Uuid::generate();
 $sessionId = generateSessionId($language, $userId);
+$activityId = Uuid::generate(); // TODO(cera) - do we need to infer this too?
 $uniqueResponseIdSuffix = Uuid::generate();
 
 // define the items
@@ -57,17 +59,20 @@ $items = [
 $questions = [
 	[
 	    'type' => 'custom',
+	    'custom_type' => 'flashcard',
 	    'response_id' => $uniqueResponseIdSuffix.'_Flash1',
 	    'js' => '//localhost:8080/question/flash-card.js',
 	    'valid_response' => 'Beer'
 	]
 ];
 
+$name = 'Learnosity LRN ' . $languageConfig['name'];
+
 $request = [
-	'name' => 'Learnosity LRN ' . $language,
+	'name' => $name,
 	'state' => 'initial',
-	'title' => 'Hello',
-	'subtitle' => 'ok',
+	'title' => 'Learnosity Flash Cards',
+	'subtitle' => 'Language: ' . $languageConfig['name'],
 	'navigation' => [],
 	'time' => [],
 	'regions' => 'main',
@@ -78,8 +83,8 @@ $request = [
 	'questionsApiActivity' => [
 		'type' => 'submit_practice',
 		'state' => 'initial',
-		'id' => 'hi', // TODO
-		'name' => 'Hello Again',
+		'id' => 'hi', // TODO(cera) - what the heck is this?
+		'name' => $name,
 		'course_id' => $courseId,
 		'session_id' => $sessionId,
 		'questions' => $questions,
