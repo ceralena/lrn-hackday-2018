@@ -71,12 +71,12 @@ $request = [
 $init = new Init('assess', $security, getConsumerSecret(), $request);
 $signedRequest = $init->generate();
 
-?>
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html>
 <head>
-    <title>Learnosity Flash Cards</title>
-    <link rel="stylesheet" href="question/flash-card.css" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>Learnosity Flash Cards</title>
+<link rel="stylesheet" href="question/flash-card.css" />
 </head>
 <body>
 
