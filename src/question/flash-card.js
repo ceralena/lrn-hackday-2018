@@ -11,6 +11,11 @@ function (_, $, template) {
 
     var playPromises = [];
 
+    var messages = {
+        success: ["Sweet as!", "Too easy!", "Well done mate."],
+        error: ["Yeh na, mate.", "Nope.", "Na ha."],
+    };
+
     assessApp.on('item:changed', function () {
         var ids = assessApp.getCurrentItem().response_ids;
         var question = questions[ids && ids[0]];
@@ -95,16 +100,26 @@ function (_, $, template) {
         },
 
         onValidate: function () {
-            var valid = this.facade.isValid();
+            var valid = this.facade.isValid(), message;
 
             this.init.$el.find('.card')
                 .toggleClass('correct', valid)
                 .toggleClass('incorrect', !valid)
                 .toggleClass('flipped');
 
-            var message = valid ? 'Correct! ' : "Ye nah, " + this.response + " is wrong. The answer was: ";
+            if (valid) {
+                message = _.shuffle(messages.success)[0]
+                    + this.init.question.valid_response
+                    + " is the correct answer";
+            } else {
+                message = _.shuffle(messages.error)[0]
+                    + " "
+                    + this.response
+                    + " is wrong. The answer was: "
+                    + this.init.question.valid_response;
+            }
 
-            this.playAudio('en', message + this.init.question.valid_response);
+            this.playAudio('en', message);
         },
 
         clearValidation() {
