@@ -9,6 +9,8 @@ function (_, $, template) {
 
     var audios = {};
 
+    var playPromises = [];
+
     assessApp.on('item:changed', function () {
         var ids = assessApp.getCurrentItem().response_ids;
         var question = questions[ids && ids[0]];
@@ -118,14 +120,24 @@ function (_, $, template) {
         playAudio(lang, text) {
             var key = lang + text;
 
-            _(audios).each(function (audio) {
-                audio.pause();
-            });
+            this.stopAllAudio();
 
             if (!audios[key]) {
                 audios[key] = new Audio(['/speech.php?lang=' + lang + '&text=' + text]);
             }
-            audios[key].play();
+            playPromises.push({
+                element: audios[key],
+                promise: audios[key].play()
+            });
+        },
+
+        stopAllAudio() {
+            _(playPromises).each(function (obj, index) {
+                obj.promise && obj.promise.then(function () {
+                    obj.element.pause();
+                    playPromises.splice(index, 1);
+                });
+            });
         }
     });
 
