@@ -77,13 +77,19 @@ $signedRequest = $init->generate();
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <title>Learnosity Flash Cards</title>
 <link rel="stylesheet" href="question/flash-card.css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
 
 <div class="intro-container">
-    <div class="language-selection">Japanese</div>
-    <div class="language-selection">Spanish</div>
-    <div class="language-selection">Arabic</div>
+    <div class="row">
+        <div class="choose-language">Choose a language</div>
+    </div>
+    <div class="row">
+        <a href="#" class="language-selection">Japanese</a>
+        <a href="#" class="language-selection">Spanish</a>
+        <a href="#" class="language-selection">Arabic</a>
+    </div>
 </div>
 
 <div class="hackday-assess"></div>
