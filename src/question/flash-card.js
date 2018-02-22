@@ -39,7 +39,9 @@ function (_, $, template) {
                 }
             });
 
-            $el.find('.back').on('click', this.clearValidation.bind(this));
+            $el.find('.back').on('click', function () {
+                assessApp.items().next();
+            });
         },
 
         onValidate: function () {
@@ -65,7 +67,7 @@ function (_, $, template) {
 
     _.extend(CustomQuestionScorer.prototype, {
         isValid: function () {
-            return this.response.toLowerCase() === this.question.valid_response.toLowerCase();
+            return this.response && this.response.toLowerCase() === this.question.valid_response.toLowerCase();
         },
 
         score: function () {
