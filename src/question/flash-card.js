@@ -43,7 +43,7 @@ function (_, $, template) {
         this.render();
         this.setupDomEvents();
 
-        init.events.on('validate', this.onValidate, this);
+        init.events.on('validate', this.onValidate.bind(this));
         init.events.trigger('ready');
 
         questions[init.question.response_id] = this;
@@ -64,10 +64,13 @@ function (_, $, template) {
             var events = this.init.events;
             var facade = this.facade;
 
+            var self = this;
+
             $el.find('input.response').on('keyup', function (e) {
                 var code = (e.keyCode ? e.keyCode : e.which);
 
-                events.trigger('changed', e.currentTarget.value);
+                self.response = e.currentTarget.value;
+                events.trigger('changed', self.response);
 
                 if (code === 13) {
                     facade.validate();
@@ -87,7 +90,9 @@ function (_, $, template) {
                 .toggleClass('incorrect', !valid)
                 .toggleClass('flipped');
 
-            this.playAudio('en', this.init.question.valid_response);
+            var message = valid ? 'Correct! ' : "Sorry, " + this.response + " is wrong. The answer was: ";
+
+            this.playAudio('en', message + this.init.question.valid_response);
         },
 
         clearValidation() {
