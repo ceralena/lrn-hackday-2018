@@ -23,6 +23,13 @@ LearnosityAmd.define(['underscore'], function (_) {
         </div>
     `;
 
+    const backFooter = `
+        <div class="card-footer">
+            <span>Correct/incorrect</span>
+            <a href="#" class="button next">Next</a>
+        </div>
+    `;
+
     return _.template(`
         <div class="card-container">
           <div class="card">
@@ -37,6 +44,7 @@ LearnosityAmd.define(['underscore'], function (_) {
                 <div class="face-content">
                     ${header}
                     <%= back %>
+                    ${backFooter}
                 </div>
             </div>
           </div>

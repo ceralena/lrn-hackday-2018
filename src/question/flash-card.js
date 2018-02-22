@@ -79,7 +79,15 @@ function (_, $, template) {
                 }
             });
 
-            $el.find('.back').on('click', function () {
+            $el.find('.button.check').on('click', function () {
+                facade.validate();
+            });
+
+            $el.find('.back.face').on('click', function () {
+                assessApp.items().next();
+            });
+
+            $el.find('.button.next').on('click', function () {
                 assessApp.items().next();
             });
         },
