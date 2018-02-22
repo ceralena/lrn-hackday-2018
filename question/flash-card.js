@@ -5,9 +5,7 @@ LearnosityAmd.define(['underscore', 'jquery', '/question/flash-card-template.js'
         this.events.trigger('ready');
     }
 
-    function CustomQuestionScorer() {
-        
-    }
+    function CustomQuestionScorer() {}
 
     _.extend(CustomQuestionScorer.prototype, {
         isValid: function () {

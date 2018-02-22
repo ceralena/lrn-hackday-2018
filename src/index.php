@@ -89,6 +89,12 @@ $init = new Init('assess', $security, $consumerSecret, $request);
 $signedRequest = $init->generate();
 
 ?>
+<!DOCTYPE html>
+
+<head>
+	<title>Learnosity Flash Cards</title>
+</head>
+<body>
 
 <div class='hackday-assess'>
 </div>
@@ -102,3 +108,5 @@ $signedRequest = $init->generate();
         },
         assessApp = LearnosityAssess.init(<?php echo $signedRequest; ?>, '.hackday-assess', eventOptions);
 </script>
+
+</body>
