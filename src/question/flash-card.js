@@ -5,6 +5,19 @@ LearnosityAmd.define([
 ],
 function (_, $, template) {
 
+
+    $(document).on('keyup', function (e) {
+        var code = (e.keyCode ? e.keyCode : e.which);
+
+        if (code === 39) {
+            assessApp.items().next();
+        }
+
+        if (code === 37) {
+            assessApp.items().previous();
+        }
+    });
+
     function CustomQuestion(init, utils) {
         this.init = init;
         this.facade = init.getFacade();
@@ -32,9 +45,11 @@ function (_, $, template) {
             var facade = this.facade;
 
             $el.find('input.response').on('keyup', function (e) {
+                var code = (e.keyCode ? e.keyCode : e.which);
+
                 events.trigger('changed', e.currentTarget.value);
 
-                if ((e.keyCode ? e.keyCode : e.which) === 13) {
+                if (code === 13) {
                     facade.validate();
                 }
             });
