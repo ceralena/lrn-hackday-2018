@@ -10,9 +10,17 @@ function (_, $, template) {
     assessApp.on('item:changed', function () {
         var ids = assessApp.getCurrentItem().response_ids;
         var question = questions[ids && ids[0]];
+        var $assess = $('.hackday-assess');
 
         if (question) {
-            question.playLabelAudio()
+            function checkVisibility() {
+                if ($assess.is(':visible')) {
+                    clearInterval(interval);
+                    question.playLabelAudio();
+                }
+            }
+            console.log('question');
+            var interval = setInterval(checkVisibility, 100);
         }
     });
 
@@ -50,15 +58,6 @@ function (_, $, template) {
                 front: question.front_title,
                 back: question.valid_response
             }));
-
-            // this.facade.on('all', function (g) {
-            //     console.log(g);
-            // });
-            // debugger;
-
-            // if (this.init.$el.is(':visible')) {
-            //     playAudio('ja', question.front_title);
-            // }
         },
 
         setupDomEvents(e) {
@@ -96,6 +95,10 @@ function (_, $, template) {
              this.init.$el.find('.card')
                 .removeClass('correct incorrect')
                 .toggleClass('flipped');
+        },
+
+        playLabelAudio() {
+            this.playAudio('ja', this.init.question.front_title);
         },
 
         playAudio(lang, text) {

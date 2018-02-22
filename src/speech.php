@@ -1,10 +1,11 @@
 <?php
 
 require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../config.php';
 
 $voice = $_GET['lang'] === 'ja' ? 'Mizuki' : 'Nicole';
 
-// NEED AWS CREDENTIALS HERE
+
 $credentials    = new \Aws\Credentials\Credentials($awsAccessKeyId, $awsSecretKey);
 $client         = new \Aws\Polly\PollyClient([
     'version'     => '2016-06-10',
