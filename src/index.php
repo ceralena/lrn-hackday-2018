@@ -58,7 +58,7 @@ $questions = [
 	[
 	    'type' => 'custom',
 	    'response_id' => $uniqueResponseIdSuffix.'_Flash1',
-	    'js' => '/question/flash-card.js',
+	    'js' => '//localhost:8080/question/flash-card.js',
 	    'valid_response' => 'Beer'
 	]
 ];
@@ -82,6 +82,7 @@ $request = [
 		'name' => 'Hello Again',
 		'course_id' => $courseId,
 		'session_id' => $sessionId,
+		'questions' => $questions,
 	]
 ];
 
