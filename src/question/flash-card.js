@@ -92,7 +92,7 @@ function (_, $, template) {
                 .toggleClass('incorrect', !valid)
                 .toggleClass('flipped');
 
-            var message = valid ? 'Correct! ' : "Sorry, " + this.response + " is wrong. The answer was: ";
+            var message = valid ? 'Correct! ' : "Ye nah, " + this.response + " is wrong. The answer was: ";
 
             this.playAudio('en', message + this.init.question.valid_response);
         },

@@ -4,7 +4,7 @@ LearnosityAmd.define(['underscore'], function (_) {
         <div class="card-header">
             <span>image</span>
             <span>Japanese</span>
-            <span>Cards left: 19</span>
+            <span class="cards-left">Cards left: 19</span>
         </div>
     `;
 
