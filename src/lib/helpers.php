@@ -40,7 +40,8 @@ function generateSessionId($langauge, $userId) {
 function getLanguageConfig($shortLabel) {
 	$languageConfigs = [
 		'ja' => [
-			'name' => 'Japanese'
+			'name' => 'Japanese',
+			'shortCode' => 'ja'
 		]
 	];
 

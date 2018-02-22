@@ -2,9 +2,12 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/lib/helpers.php';
+require __DIR__ . '/lib/data.php';
 
 use LearnositySdk\Request\Init;
 use LearnositySdk\Utils\Uuid;
+
+$wordsCount = 10;
 
 $domain = $_SERVER['SERVER_NAME'];
 
@@ -21,40 +24,22 @@ if (!isset($_GET['lang'])) {
 }
 
 $userId = $_GET['user_id'];
-$languageShortLabel = $_GET['lang'];
 
-$languageConfig = getLanguageConfig($languageShortLabel);
+$languageConfig = getLanguageConfig($_GET['lang']);
 
 // set up the security for the key signing
 $security = generateSecurity($userId, $domain);
 
-// $sessionId = Uuid::generate();
 $sessionId = generateSessionId($language, $userId);
 $activityId = Uuid::generate(); // TODO(cera) - do we need to infer this too?
+
 $uniqueResponseIdSuffix = Uuid::generate();
 
-// define the items
-$items = [
-	[
-		'reference' => 'item1',
-		'content' => '<span class="learnosity-response question-' . $uniqueResponseIdSuffix. '_Flash1"></span>',
-		'response_ids' => [
-			$uniqueResponseIdSuffix.'_Flash1'
-		]
-	]
-];
+$languageData = getItemsQuestions($languageConfig['shortCode'], $uniqueResponseIdSuffix, $wordsCount);
 
-$questions = [
-	[
-	    'type' => 'custom',
-	    'custom_type' => 'flashcard',
-	    'response_id' => $uniqueResponseIdSuffix.'_Flash1',
-	    'js' => '//localhost:8080/question/flash-card.js',
-	    'custom_type' => 'Flash Card',
-	    'front_title' => 'Cerveza',
-	    'valid_response' => 'Beer'
-	]
-];
+// define the items
+$items = $languageData['items'];
+$questions = $languageData['questions'];
 
 $name = 'Learnosity LRN ' . $languageConfig['name'];
 
