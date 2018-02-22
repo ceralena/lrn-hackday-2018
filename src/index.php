@@ -1,6 +1,7 @@
 <?php
 
 require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/lib/helpers.php';
 
 use LearnositySdk\Request\Init;
 use LearnositySdk\Utils\Uuid;
@@ -27,6 +28,7 @@ if (!isset($_GET['language'])) {
 }
 
 $userId = $_GET['user_id'];
+$language = $_GET['language'];
 
 // set up the security for the key signing
 $security = [
@@ -36,19 +38,27 @@ $security = [
 	'user_id' => $userId
 ];
 
-
 // TODO - infer session ID from hash of user + language
-$sessionId = Uuid::generate();
+// $sessionId = Uuid::generate();
+$sessionId = generateSessionId($language, $userId);
 $uniqueResponseIdSuffix = Uuid::generate();
 
 // define the items
 $items = [
 	[
 		'reference' => 'item1',
-		'content' => '<span class="learnosity-response question-' . $uniqueResponseIdSuffix._Flash1 . '"></span>',
+		'content' => '<span class="learnosity-response question-' . $uniqueResponseIdSuffix. '_Flash1"></span>',
 		'response_ids' => [
 			$uniqueResponseIdSuffix.'_Flash1'
 		]
+	]
+];
+
+$questions = [
+	[
+	    "type" => "custom",
+	    'response_id' => $uniqueResponseIdSuffix.'_Flash1',
+	    'js' => '/question/flash-card.js'
 	]
 ];
 
@@ -71,31 +81,7 @@ $request = [
 		'name' => 'Hello Again',
 		'course_id' => $courseId,
 		'session_id' => $sessionId,
-
-		'questions' => [
-			[
-			    "type" => "custom",
-			    'response_id' => $uniqueResponseIdSuffix.'_Flash1',
-			    'js' => '/question/flash-card.js'
-			]
-		]
-	],
-
-	// 'user_id' => $userId,
-	// 'rendering_type' => 'inline',
-
-	// 'activity_id' => 'lrn_hackday2018_flashcard_' . $language,
-	// 'session_id' => $sessionId,
-	
-	// 'type' => 'submit_practice',
-	// 'questionsApiActivity' => [
-	// 	'consumer_key' => $consumerKey,
-	// 	'timestamp' => $timestamp,
-	// 	'signature' => 
-	// ]
-	// 'config' => [
-	// 	'renderSubmitButton' => true, // TODO - maybe not?
-	// ],
+	]
 ];
 
 $init = new Init('assess', $security, $consumerSecret, $request);
