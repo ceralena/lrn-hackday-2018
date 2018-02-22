@@ -42,7 +42,11 @@ function getLanguageConfig($shortLabel) {
 		'ja' => [
 			'name' => 'Japanese',
 			'shortCode' => 'ja'
-		]
+		],
+        'es' => [
+            'name' => 'Spanish',
+            'shortcode' => 'es'
+        ]
 	];
 
 	if (!isset($languageConfigs[$shortLabel])) {
