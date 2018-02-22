@@ -25,6 +25,6 @@ header('Content-Type: audio/mpeg, audio/x-mpeg, audio/x-mpeg-3, audio/mpeg3');
 header('Content-length: ' . strlen($resultData));
 header('Content-Disposition: attachment; filename="speech.mp3"');
 header('X-Pad: avoid browser bug');
-header('Cache-Control: no-cache');
+header('Cache-Control: public');
 
 echo $resultData;

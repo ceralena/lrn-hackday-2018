@@ -7,6 +7,8 @@ function (_, $, template) {
 
     var questions = {};
 
+    var audios = {};
+
     assessApp.on('item:changed', function () {
         var ids = assessApp.getCurrentItem().response_ids;
         var question = questions[ids && ids[0]];
@@ -106,8 +108,16 @@ function (_, $, template) {
         },
 
         playAudio(lang, text) {
-            var sound = new Audio(['/speech.php?lang=' + lang + '&text=' + text]);
-            sound.play();
+            var key = lang + text;
+
+            _(audios).each(function (audio) {
+                audio.pause();
+            });
+
+            if (!audios[key]) {
+                audios[key] = new Audio(['/speech.php?lang=' + lang + '&text=' + text]);
+            }
+            audios[key].play();
         }
     });
 
