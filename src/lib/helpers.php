@@ -1,5 +1,16 @@
 <?php
 
+// global settings
+global $consumerKey, $consumerSecret;
+
+function getConsumerKey() {
+	return 'yis0TYCu7U9V4o7M';
+}
+
+function getConsumerSecret() {
+	return '74c5fd430cf1242a527f6223aebd42d30464be22';
+}
+
 // given language and user ID, infer session ID
 function generateSessionId($langauge, $userId) {
 	$seed = implode('.', [$language, $userId]);
@@ -38,4 +49,15 @@ function getLanguageConfig($shortLabel) {
 	}
 
 	return $languageConfigs[$shortLabel];
+}
+
+function generateSecurity($userId, $domain) {
+	$timestamp = gmdate('Ymd-Hi');
+
+	return [
+		'consumer_key' => getConsumerKey(),
+		'domain' => $domain,
+		'timestamp' => $timestamp,
+		'user_id' => $userId
+	];
 }

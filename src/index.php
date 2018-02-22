@@ -6,14 +6,7 @@ require __DIR__ . '/lib/helpers.php';
 use LearnositySdk\Request\Init;
 use LearnositySdk\Utils\Uuid;
 
-// global settings
-$consumerKey = "yis0TYCu7U9V4o7M";
-$consumerSecret = "74c5fd430cf1242a527f6223aebd42d30464be22";
-
-// domain and timestamp for API signature
-
 $domain = $_SERVER['SERVER_NAME'];
-$timestamp = gmdate('Ymd-Hi');
 
 $courseId   = 'flashcard_demo_' . $consumer_key;
 
@@ -33,12 +26,7 @@ $languageShortLabel = $_GET['lang'];
 $languageConfig = getLanguageConfig($languageShortLabel);
 
 // set up the security for the key signing
-$security = [
-	'consumer_key' => $consumerKey,
-	'domain' => $domain,
-	'timestamp' => $timestamp,
-	'user_id' => $userId
-];
+$security = generateSecurity($userId, $domain);
 
 // $sessionId = Uuid::generate();
 $sessionId = generateSessionId($language, $userId);
@@ -93,7 +81,7 @@ $request = [
 	]
 ];
 
-$init = new Init('assess', $security, $consumerSecret, $request);
+$init = new Init('assess', $security, getConsumerSecret(), $request);
 $signedRequest = $init->generate();
 
 ?>
