@@ -1,4 +1,4 @@
-# Learnosity Hackday 2018: Flashcardsj
+# Learnosity Hackday 2018: Flashcards
 
 ~ ~
 
