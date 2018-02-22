@@ -129,7 +129,9 @@ function (_, $, template) {
         },
 
         playLabelAudio() {
-            this.playAudio('ja', this.init.question.front_title);
+            var lang = assessApp.flashcardState.lang;
+
+            this.playAudio(lang, this.init.question.front_title);
         },
 
         playAudio(lang, text) {
