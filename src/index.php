@@ -108,6 +108,10 @@ $signedRequest = $init->generate();
     },
     assessApp = LearnosityAssess.init(<?php echo $signedRequest; ?>, '.hackday-assess', eventOptions);
 
+    assessApp.flashcardMeta = {
+        lang: "<?php echo $languageConfig['shortCode']; ?>"
+    };
+
     $(function () {
         $('.language-selection').on('click', function () {
             $('.intro-container').hide();
