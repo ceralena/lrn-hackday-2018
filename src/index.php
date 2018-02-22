@@ -92,7 +92,7 @@ $signedRequest = $init->generate();
 <!DOCTYPE html>
 
 <head>
-	<title>Learnosity Flash Cards</title>
+   <title>Learnosity Flash Cards</title>
 </head>
 <body>
 
@@ -103,7 +103,11 @@ $signedRequest = $init->generate();
 <script>
     var eventOptions = {
             readyListener: function () {
-                console.log('Learnosity Assess API is ready');
+                console.log('flash card app is ready');
+            },
+            errorListener: function (err) {
+               console.log('flash card app error: ' + JSON.stringify(err));
+               debugger;
             }
         },
         assessApp = LearnosityAssess.init(<?php echo $signedRequest; ?>, '.hackday-assess', eventOptions);
