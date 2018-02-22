@@ -31,9 +31,9 @@ $languageConfig = getLanguageConfig($_GET['lang']);
 $security = generateSecurity($userId, $domain);
 
 $sessionId = generateSessionId($language, $userId);
-$activityId = Uuid::generate(); // TODO(cera) - do we need to infer this too?
+$activityId = 'hackday2018-flashcard';
 
-$uniqueResponseIdSuffix = Uuid::generate();
+$uniqueResponseIdSuffix = $sessionId;
 
 $languageData = getItemsQuestions($languageConfig['shortCode'], $uniqueResponseIdSuffix, $initialWordsCount);
 
