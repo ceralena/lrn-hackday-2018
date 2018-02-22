@@ -63,9 +63,11 @@ $request = [
 	'state' => 'initial',
 	'title' => 'Learnosity Flash Cards',
 	'subtitle' => 'Language: ' . $languageConfig['name'],
-	'navigation' => [],
+    'navigation' => [
+        'show_intro' => false,
+    ],
 	'time' => [],
-	'regions' => 'items-only',
+    'regions' => 'items-only',
 	'configuration' => [
 		'questionsApiVersion' => 'v2',
 	],
@@ -93,21 +95,33 @@ $signedRequest = $init->generate();
 </head>
 <body>
 
-<div class="intro-container"></div>
+<div class="intro-container">
+    <div class="language-selection">Japanese</div>
+    <div class="language-selection">Spanish</div>
+    <div class="language-selection">Arabic</div>
+</div>
+
 <div class="hackday-assess"></div>
 
 <script src="https://assess-au.learnosity.com"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
     var eventOptions = {
-            readyListener: function () {
-                console.log('flash card app is ready');
-            },
-            errorListener: function (err) {
-               console.log('flash card app error: ' + JSON.stringify(err));
-               debugger;
-            }
+        readyListener: function () {
+            console.log('flash card app is ready');
         },
-        assessApp = LearnosityAssess.init(<?php echo $signedRequest; ?>, '.hackday-assess', eventOptions);
+        errorListener: function (err) {
+           console.log('flash card app error: ' + JSON.stringify(err));
+        }
+    },
+    assessApp = LearnosityAssess.init(<?php echo $signedRequest; ?>, '.hackday-assess', eventOptions);
+
+    $(function () {
+        $('.language-selection').on('click', function () {
+            $('.intro-container').hide();
+            $('.hackday-assess').fadeIn();
+        });
+    });
 </script>
 
 </body>
