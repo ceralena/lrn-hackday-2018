@@ -98,7 +98,7 @@ $signedRequest = $init->generate();
 <script src="https://assess-au.learnosity.com"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-    var eventOptions = {
+    let eventOptions = {
         readyListener: function () {
             console.log('flash card app is ready');
         },
@@ -108,9 +108,35 @@ $signedRequest = $init->generate();
     },
     assessApp = LearnosityAssess.init(<?php echo $signedRequest; ?>, '.hackday-assess', eventOptions);
 
-    assessApp.flashcardMeta = {
-        lang: "<?php echo $languageConfig['shortCode']; ?>"
+    assessApp.flashcardState = {
+        lang: "<?php echo $languageConfig['shortCode']; ?>",
+        sessionId: "<?php echo $sessionId; ?>",
+        currentWordsCount: "<?php echo $initialWordsCount; ?>",
+        cardsPerFetch: "<?php echo $initialWordsCount; ?>",
     };
+
+    function fetchMoreCards() {
+        console.log('fetching more cards');
+        const params = {
+            lang: assessApp.flashcardState.lang,
+            sessionId: assessApp.flashcardState.sessionId,
+            count: assessApp.flashcardState.cardsPerFetch
+        };
+        const cardsUrl = "/cards.php?" + $.param(params);
+
+        return fetch(cardsUrl).then((res) => {
+            return res.json();
+        });
+    }
+
+    assessApp.on('item:changing', (newItemIndex) => {
+        const allowance = 5;
+            if ((assessApp.flashcardState.currentWordsCount - newItemIndex) < allowance) {
+            fetchMoreCards().then((cards) => {
+                // TODO
+            });
+        }
+    });
 
     $(function () {
         $('.language-selection').on('click', function () {
