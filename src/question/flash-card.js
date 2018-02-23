@@ -14,7 +14,7 @@ function (_, $, template) {
     var messages = {
         success: ["Sweet as!", "Too easy!", "Well done mate."],
         error: [
-            '<phoneme alphabet="ipa" ph="jɜːr, noʊ">yeah, nah</phoneme>.',
+            '<phoneme alphabet="ipa" ph="jɜːr, nɑːr">yeah, nah</phoneme> mate.',
             "Nah mate.",
             "Nope.",
             "Na ha."
