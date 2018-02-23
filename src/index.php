@@ -31,7 +31,6 @@ $languageConfig = getLanguageConfig($_GET['lang']);
 $security = generateSecurity($userId, $domain);
 
 $sessionId = generateSessionId($language, $userId);
-$activityId = 'hackday2018-flashcard';
 
 $uniqueResponseIdSuffix = $sessionId;
 
@@ -61,7 +60,7 @@ $request = [
 	'questionsApiActivity' => [
 		'type' => 'submit_practice',
 		'state' => 'resume',
-		'id' => 'hi', // TODO(cera) - what the heck is this?
+		'id' => getActivityId(),
 		'name' => $name,
 		'course_id' => $courseId,
 		'session_id' => $sessionId,

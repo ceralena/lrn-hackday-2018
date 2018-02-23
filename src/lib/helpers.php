@@ -11,6 +11,23 @@ function getConsumerSecret() {
 	return '74c5fd430cf1242a527f6223aebd42d30464be22';
 }
 
+function getActivityId() {
+    return 'hackday2018-flashcard';
+}
+
+/**
+ * @param array $ar
+ * @param array $keys
+ * @throws Exception
+ */
+function assertHasKeys(array $ar, array $keys) {
+    foreach($keys as $key) {
+        if (!isset($ar[$key])) {
+            throw new \Exception('missing key: ' . $key);
+        }
+    }
+}
+
 // given language and user ID, infer session ID
 function generateSessionId($langauge, $userId) {
 	$seed = implode('.', [$language, $userId]);
