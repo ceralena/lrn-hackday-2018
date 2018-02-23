@@ -23,7 +23,30 @@ $lrnRequest = [
             'id' => 'report-1',
             'type' => 'sessions-list',
             'ui' => 'table',
-            'activities' => $activities
+            'activities' => $activities,
+            'display_user' => true,
+            'users' => [
+                [
+                    'id' => 'Mon',
+                    'name' => 'Mon'
+                ],
+                [
+                    'id' => 'Cera',
+                    'name' => 'Cera'
+                ],
+                [
+                    'id' => 'Jarrod',
+                    'name' => 'Jarrod'
+                ],
+                [
+                    'id' => 'Kent',
+                    'name' => 'Kent'
+                ],
+                [
+                    'id' => 'Eoghan',
+                    'name' => 'Eoghan'
+                ],
+            ]
         ]
     ]
 ];
