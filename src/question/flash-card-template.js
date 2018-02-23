@@ -2,8 +2,8 @@ LearnosityAmd.define(['underscore'], function (_) {
 
     const header = `
         <div class="card-header">
-            <span>image</span>
-            <span>Japanese</span>
+            <img src="/images/icon_jp.png" class="current-language-icon" />
+            <span class="current-language">Japanese</span>
             <span class="cards-left"></span>
         </div>
     `;

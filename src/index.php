@@ -87,9 +87,9 @@ $signedRequest = $init->generate();
         <div class="choose-language">Choose a language</div>
     </div>
     <div class="row">
-        <a href="#" class="language-selection" style="background-image: url('/images/icon_jp.png')">Japanese</a>
-        <a href="#" class="language-selection" style="background-image: url('/images/icon_es.png')">Spanish</a>
-        <a href="#" class="language-selection" style="background-image: url('/images/icon_fr.png')">French</a>
+        <a href="#" class="language-selection" style="background-image: url('/images/icon_es.png')" title="Spanish"></a>
+        <a href="#" class="language-selection" style="background-image: url('/images/icon_jp.png')" title="Japanese"></a>
+        <a href="#" class="language-selection" style="background-image: url('/images/icon_fr.png')" title="French"></a>
     </div>
 </div>
 

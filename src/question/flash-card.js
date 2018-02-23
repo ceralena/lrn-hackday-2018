@@ -121,6 +121,7 @@ function (_, $, template) {
                     + " is the correct answer";
 
                 $card.find('.validation-message').html('Correct!');
+                $card.find('.validation-icon').css({ 'background': 'url("/images/icon_tick.png")' });
             } else {
                 message = _.shuffle(messages.error)[0]
                     + " "
@@ -129,6 +130,7 @@ function (_, $, template) {
                     + this.init.question.valid_response;
 
                 $card.find('.validation-message').html('Incorrect');
+                $card.find('.validation-icon').css({ 'background': 'url("/images/icon_cross.png")' });
             }
 
             if (assessApp.flashcardState.speech) {
