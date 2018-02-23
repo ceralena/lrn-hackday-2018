@@ -29,7 +29,7 @@ $languageConfig = getLanguageConfig($_GET['lang']);
 // set up the security for the key signing
 $security = generateSecurity($userId, $domain);
 
-$sessionId = generateSessionId($language, $userId);
+$sessionId = generateSessionId($languageConfig, $userId);
 
 $uniqueResponseIdSuffix = $sessionId;
 

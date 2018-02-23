@@ -11,8 +11,14 @@ function getConsumerSecret() {
 	return '74c5fd430cf1242a527f6223aebd42d30464be22';
 }
 
+function getSeed() {
+    return 'v2';
+}
+
 function getActivityId($languageConfig) {
-    return 'Flash Card: ' . $languageConfig['name'];
+    $seed = getSeed();
+
+    return 'Flash Card: ' . $languageConfig['name'] . " ({$seed})";
 }
 
 /**
@@ -29,8 +35,8 @@ function assertHasKeys(array $ar, array $keys) {
 }
 
 // given language and user ID, infer session ID
-function generateSessionId($langauge, $userId) {
-	$seed = implode('.', [$language, $userId]);
+function generateSessionId($languageConfig, $userId) {
+	$seed = implode('.', [getSeed(), $languageConfig['name'], $userId]);
 
 	$hash = md5($seed);
 
