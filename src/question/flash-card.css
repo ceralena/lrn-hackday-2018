@@ -7,10 +7,16 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: Roboto, Arial;
-    /* background-image: url('/images/bg.gif'); */
+    font-family: Roboto, Arial;    
+}
+
+body.index {
     background-image: url('/images/bg_intro.png');
     background-size: cover;
+}
+
+body.test {
+    background-image : url('/images/bg.gif');
 }
 
 .skip, .exit {
@@ -48,10 +54,6 @@ body {
 
 .row {
     display: flex;
-}
-
-.hackday-assess {
-    display: none;
 }
 
 .lrn-assess {

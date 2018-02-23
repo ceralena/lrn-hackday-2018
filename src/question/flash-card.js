@@ -13,7 +13,7 @@ function (_, $, template) {
 
     var messages = {
         success: [
-            "Sweet as!"
+            "Sweet as!",
             "Too easy!",
             "Well done mate.",
             "Correct!",
