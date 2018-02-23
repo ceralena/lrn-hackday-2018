@@ -19,6 +19,8 @@ $voices = [
 
 $voice = $voices[$_GET['lang']];
 
+$textType = $_GET['ssml'] ? 'ssml' : 'text';
+
 
 $credentials    = new \Aws\Credentials\Credentials($awsAccessKeyId, $awsSecretKey);
 $client         = new \Aws\Polly\PollyClient([
@@ -29,7 +31,7 @@ $client         = new \Aws\Polly\PollyClient([
 $result         = $client->synthesizeSpeech([
     'OutputFormat' => 'mp3',
     'Text'         => $_GET['text'],
-    'TextType'     => 'text',
+    'TextType'     => $textType,
     'VoiceId'      => $voice, // Mizuki, Takumi, Nicole, Russell
 ]);
 $resultData     = $result->get('AudioStream')->getContents();

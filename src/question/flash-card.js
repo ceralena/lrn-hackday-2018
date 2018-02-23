@@ -15,7 +15,12 @@ function (_, $, template) {
 
     var messages = {
         success: ["Sweet as!", "Too easy!", "Well done mate."],
-        error: ["Yeh na, mate.", "Nope.", "Na ha."],
+        error: [
+            '<phoneme alphabet="ipa" ph="jɜːr, noʊ">yeah, nah</phoneme>.',
+            "Nah mate.",
+            "Nope.",
+            "Na ha."
+        ]
     };
 
     assessApp.on('item:changed', function () {
@@ -157,11 +162,17 @@ function (_, $, template) {
 
         playAudio(lang, text) {
             var key = lang + text;
+            var ssml = '';
 
             this.stopAllAudio();
 
             if (!audios[key]) {
-                audios[key] = new Audio(['/speech.php?lang=' + lang + '&text=' + text]);
+                if (text.indexOf('<') > -1) {
+                    text = `<speak>${text}</speak>`;
+                    ssml = 'ssml=true&';
+                }
+
+                audios[key] = new Audio([`/speech.php?${ssml}lang=${lang}&text=${text}`]);
             }
             playPromises.push({
                 element: audios[key],
