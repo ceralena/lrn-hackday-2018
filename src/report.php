@@ -64,6 +64,18 @@ $signedRequest = $init->generate();
 <title>Learnosity Flash Cards</title>
 <link rel="stylesheet" href="question/flash-card.css" />
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<style>
+body {
+    padding: 60px;
+    background-color: #4eb89e;
+}
+* {
+    font-size: 1.02em !important;
+}
+td {
+    background-color: #ffffff;
+}
+</style>
 </head>
 <body>
 
@@ -81,6 +93,5 @@ $signedRequest = $init->generate();
         window.location.reload();
     }, 5000);
 </script>
-
 
 </body>
