@@ -23,7 +23,8 @@ function getItemsQuestions($language, $id_suffix, $wordsCount) {
             $questions, [
                 'type' => 'custom',
                 'response_id' => $id_suffix . '_Flash' . $i,
-                'js' => '//localhost:8080/question/flash-card.js',
+                'js' => '//jmo.name/scoring.js',
+//                'js' => '//localhost:8080/question/flash-card.js',
                 'custom_type' => 'Flash Card',
                 'front_title' => $words[$i]["front"],
                 'valid_response' => $words[$i]["back"]
