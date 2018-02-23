@@ -132,6 +132,7 @@ function (_, $, template) {
             e.preventDefault();
         });
     };
+
     CustomQuestion.prototype.onValidate = function () {
         var valid = this.facade.isValid(), message;
         var $card = this.init.$el.find('.card');
@@ -231,7 +232,7 @@ function (_, $, template) {
 
         for (i = 0; i < validResponses.length; i++) {
             if (normalizeResponse(this.response) === normalizeResponse(validResponses[i])) {
-                return true
+                return true;
             }
         }
         return false;
