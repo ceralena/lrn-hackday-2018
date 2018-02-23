@@ -16,9 +16,9 @@ function (_, $, template) {
             "Sweet as!",
             "Too easy!",
             "Well done mate.",
-            "Correct!",
             "Easy peazy lemon squeezy!",
-            "Grouse!"
+            "Grouse!",
+            "Bonza mate!"
         ],
         error: [
             '<phoneme alphabet="ipa" ph="jɜːr">yeah</phoneme> <phoneme alphabet="ipa" ph="nɑːr">nah</phoneme> mate.',
@@ -26,7 +26,8 @@ function (_, $, template) {
             "Nope.",
             "Na ha.",
             "Try again.",
-            "That's not it."
+            "That's not it.",
+            "I don't like it."
         ]
     };
 
