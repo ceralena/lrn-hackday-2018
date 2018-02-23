@@ -21,36 +21,40 @@ function (_, $, template) {
         ]
     };
 
-    assessApp.on('item:changed', function () {
-        var ids = assessApp.getCurrentItem().response_ids;
-        var question = questions[ids && ids[0]];
-        var $assess = $('.hackday-assess');
+    // wrap event stuff inside a check for assessApp so that we can still execute successfully in server-side custom scoring
+    if (typeof assessApp !== 'undefined') {
+        assessApp.on('item:changed', function () {
+            var ids = assessApp.getCurrentItem().response_ids;
+            var question = questions[ids && ids[0]];
+            var $assess = $('.hackday-assess');
 
-        if (question && assessApp.flashcardState.speech) {
-            function checkVisibility() {
-                if ($assess.is(':visible')) {
-                    clearInterval(interval);
-                    question.playLabelAudio();
+            if (question && assessApp.flashcardState.speech) {
+                function checkVisibility() {
+                    if ($assess.is(':visible')) {
+                        clearInterval(interval);
+                        question.playLabelAudio();
+                    }
                 }
+                var interval = setInterval(checkVisibility, 200);
             }
-            var interval = setInterval(checkVisibility, 200);
-        }
-    });
+        });
 
-    assessApp.on('item:changing', updateAttemptedCount);
+        assessApp.on('item:changing', updateAttemptedCount);
 
-    $(document).on('keyup', function (e) {
-        var code = (e.keyCode ? e.keyCode : e.which);
+        $(document).on('keyup', function (e) {
+            var code = (e.keyCode ? e.keyCode : e.which);
 
-        if (code === 39) {
-            assessApp.save();
-            assessApp.items().next();
-        }
+            if (code === 39) {
+                assessApp.save();
+                assessApp.items().next();
+            }
 
-        if (code === 37) {
-            assessApp.items().previous();
-        }
-    });
+            if (code === 37) {
+                assessApp.items().previous();
+            }
+        });
+    }
+
 
     function updateAttemptedCount() {
         var attemptedCount = assessApp.attemptedItems().length;
