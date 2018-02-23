@@ -87,9 +87,9 @@ $signedRequest = $init->generate();
         <div class="choose-language">Choose a language</div>
     </div>
     <div class="row">
-        <a href="#" class="language-selection">Japanese</a>
-        <a href="#" class="language-selection">Spanish</a>
-        <a href="#" class="language-selection">French</a>
+        <a href="#" class="language-selection" style="background-image: url('/images/icon_jp.png')">Japanese</a>
+        <a href="#" class="language-selection" style="background-image: url('/images/icon_es.png')">Spanish</a>
+        <a href="#" class="language-selection" style="background-image: url('/images/icon_fr.png')">French</a>
     </div>
 </div>
 
@@ -142,6 +142,10 @@ $signedRequest = $init->generate();
         $('.language-selection').on('click', function () {
             $('.intro-container').hide();
             $('.hackday-assess').fadeIn();
+            $('body').css({
+                "background-image" : "url('/images/bg.gif')",
+                "background-size": "auto"
+            });
         });
     });
 </script>

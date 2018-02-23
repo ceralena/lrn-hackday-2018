@@ -4,7 +4,7 @@ LearnosityAmd.define(['underscore'], function (_) {
         <div class="card-header">
             <span>image</span>
             <span>Japanese</span>
-            <span class="cards-left">Cards left: 19</span>
+            <span class="cards-left"></span>
         </div>
     `;
 
@@ -23,9 +23,16 @@ LearnosityAmd.define(['underscore'], function (_) {
         </div>
     `;
 
+    const backBody = `
+        <div class="card-body">
+            <%= back %>
+        </div>
+    `;
+
     const backFooter = `
         <div class="card-footer">
-            <span>Correct/incorrect</span>
+            <span class="validation-icon"></span>
+            <span class="validation-message"></span>
             <a href="#" class="button next">Next</a>
         </div>
     `;
@@ -43,7 +50,7 @@ LearnosityAmd.define(['underscore'], function (_) {
             <div class="back face">
                 <div class="face-content">
                     ${header}
-                    <%= back %>
+                    ${backBody}
                     ${backFooter}
                 </div>
             </div>

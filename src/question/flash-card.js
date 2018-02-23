@@ -32,6 +32,7 @@ function (_, $, template) {
         }
     });
 
+    assessApp.on('item:changing', updateAttemptedCount);
 
     $(document).on('keyup', function (e) {
         var code = (e.keyCode ? e.keyCode : e.which);
@@ -44,6 +45,11 @@ function (_, $, template) {
             assessApp.items().previous();
         }
     });
+
+    function updateAttemptedCount() {
+        var attemptedCount = assessApp.attemptedItems().length;
+        $('.cards-left').html('Cards attempted: ' + attemptedCount);
+    }
 
     function CustomQuestion(init, utils) {
         this.init = init;
@@ -64,7 +70,8 @@ function (_, $, template) {
 
             this.init.$el.html(template({
                 front: question.front_title,
-                back: question.valid_response
+                back: question.valid_response,
+                attempted: assessApp.attemptedItems()
             }));
         },
 
@@ -86,23 +93,24 @@ function (_, $, template) {
                 }
             });
 
-            $el.find('.button.check').on('click', function () {
+            $el.find('.button.check').on('click', function (e) {
                 facade.validate();
+                e.preventDefault();
             });
 
-            $el.find('.back.face').on('click', function () {
+            $el.find('.button.skip, .back.face, .button.next').on('click', function (e) {
                 assessApp.items().next();
-            });
-
-            $el.find('.button.next').on('click', function () {
-                assessApp.items().next();
+                e.preventDefault();
             });
         },
 
         onValidate: function () {
             var valid = this.facade.isValid(), message;
+            var $card = this.init.$el.find('.card');
 
-            this.init.$el.find('.card')
+            updateAttemptedCount();
+
+            $card
                 .toggleClass('correct', valid)
                 .toggleClass('incorrect', !valid)
                 .toggleClass('flipped');
@@ -111,12 +119,16 @@ function (_, $, template) {
                 message = _.shuffle(messages.success)[0]
                     + this.init.question.valid_response
                     + " is the correct answer";
+
+                $card.find('.validation-message').html('Correct!');
             } else {
                 message = _.shuffle(messages.error)[0]
                     + " "
                     + this.response
                     + " is wrong. The answer was: "
                     + this.init.question.valid_response;
+
+                $card.find('.validation-message').html('Incorrect');
             }
 
             this.playAudio('en', message);

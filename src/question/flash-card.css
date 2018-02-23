@@ -8,8 +8,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: Roboto, Arial;
-    background-image: url('/images/bg.gif');
-    color: #ffffff;
+    /* background-image: url('/images/bg.gif'); */
+    background-image: url('/images/bg_intro.png');
+    background-size: cover;
 }
 
 .intro-container {
@@ -21,10 +22,11 @@ body {
 }
 
 .choose-language {
-    font-size: 2em;
+    font-size: 2.1em;
     font-weight: bold;
     display: block;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
+    color: #222222;
 }
 
 .language-selection {
@@ -38,6 +40,7 @@ body {
     border-radius: 50%;
     background: #ffffff;
     margin: 10px;
+    background-size: cover;
 }
 
 .row {
@@ -140,7 +143,7 @@ body {
 
 .card-header {
     border-bottom: 1px solid #d3d3d3;
-    padding: 15px;
+    padding: 20px 40px;
     border-radius: 8px 8px 0 0;
 }
 
@@ -151,7 +154,14 @@ body {
 .card-body {
     font-size: 3em;
     text-align: center !important;
-    padding: 56px;
+}
+
+.front .card-body {
+    padding: 40px;
+}
+
+.back .card-body {
+    padding: 70px;
 }
 
 .card-footer {
@@ -169,7 +179,9 @@ body {
     border: 2px solid transparent;
 }
 
-.button.check {
+.button.check,
+.button.next
+{
     color: #ffffff;
     float: right;
     background-color: #4caf50 !important;
@@ -186,4 +198,19 @@ body {
 
 .lrn-region-group.lrn-group-middle {
     height: 100%;
+}
+
+.validation-message {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.correct .card-footer {
+    color: #229922;
+    background-color: #ddf3dd;
+}
+
+.incorrect .card-footer {
+    color: #992222;
+    background-color: #f3dddd;
 }
