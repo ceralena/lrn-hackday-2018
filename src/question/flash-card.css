@@ -13,6 +13,10 @@ body {
     background-size: cover;
 }
 
+.skip, .exit {
+    color: #333333 !important;
+}
+
 .intro-container {
     display: flex;
     align-items: center;
@@ -110,7 +114,8 @@ body {
 
 .card .front .response {
     display: block;
-    width: 5em;
+    width: 70%;
+    border-radius: 0;
 }
 
 .card .face-content {
@@ -121,7 +126,7 @@ body {
 
 .card input {
     text-align: center;
-    margin: auto !important;
+    margin: 20px auto 0 auto !important;
 }
 
 .card input:not(:focus) {
@@ -151,7 +156,7 @@ body {
 }
 
 .card-body {
-    font-size: 3em;
+    font-size: 2.3em;
     text-align: center !important;
 }
 
@@ -192,6 +197,15 @@ body {
 .button.next:focus {
     color: #ffffff;
     border: 2px solid #ffffff;
+}
+
+.skip {
+    float: left;
+    padding-left: 0;
+}
+
+.exit {
+    float: right;
 }
 
 .lrn.lrn-assess .lrn-group-middle .lrn-region {
@@ -242,4 +256,21 @@ body {
 
 .current-language {
     padding-left: 38px;
+}
+
+.success-image {
+    position: absolute;
+    bottom: 75px;
+    left: 64px;
+    margin: auto;
+    background-image: url('/images/happy_jp.gif');
+    background-size: cover;
+    display: block;
+    width: 90px;
+    height: 90px;
+    z-index: -1;
+}
+
+.incorrect .success-image {
+    background-image: url('/images/angry_jp.gif');
 }

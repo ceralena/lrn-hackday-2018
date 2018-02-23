@@ -20,6 +20,7 @@ LearnosityAmd.define(['underscore'], function (_) {
         <div class="card-footer">
             <a href="#" class="button skip">Skip</a>
             <a href="#" class="button check">Check</a>
+            <a href="/report.php" class="button exit">Exit</a>
         </div>
     `;
 
@@ -34,6 +35,7 @@ LearnosityAmd.define(['underscore'], function (_) {
             <span class="validation-icon"></span>
             <span class="validation-message"></span>
             <a href="#" class="button next">Next</a>
+            <a href="/report.php" class="button exit">Exit</a>
         </div>
     `;
 
@@ -53,6 +55,7 @@ LearnosityAmd.define(['underscore'], function (_) {
                     ${backBody}
                     ${backFooter}
                 </div>
+                <span class="success-image"></span>
             </div>
           </div>
         </div>
