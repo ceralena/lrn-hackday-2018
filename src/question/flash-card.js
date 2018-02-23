@@ -12,12 +12,21 @@ function (_, $, template) {
     const parenRgx = /\s?[\(\[].+?[\)\]]$/;
 
     var messages = {
-        success: ["Sweet as!", "Too easy!", "Well done mate."],
+        success: [
+            "Sweet as!"
+            "Too easy!",
+            "Well done mate.",
+            "Correct!",
+            "Easy peazy lemon squeezy!",
+            "Grouse!"
+        ],
         error: [
             '<phoneme alphabet="ipa" ph="jɜːr">yeah</phoneme> <phoneme alphabet="ipa" ph="nɑːr">nah</phoneme> mate.',
             "Nah mate.",
             "Nope.",
-            "Na ha."
+            "Na ha.",
+            "Try again.",
+            "That's not it."
         ]
     };
 
