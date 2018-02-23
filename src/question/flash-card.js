@@ -179,8 +179,6 @@ function (_, $, template) {
 
         stopAllAudio() {
             _(playPromises).each(function (obj, index) {
-                obj.element.src = '';
-
                 obj.promise && obj.promise.then(function () {
                     obj.element.pause();
                     playPromises.splice(index, 1);
