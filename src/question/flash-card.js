@@ -18,7 +18,8 @@ function (_, $, template) {
             "Well done mate.",
             "Easy peazy lemon squeezy!",
             "Grouse!",
-            "Bonza mate!"
+            "Bonza mate!",
+            "That's awesome ay!"
         ],
         error: [
             '<phoneme alphabet="ipa" ph="jɜːr">yeah</phoneme> <phoneme alphabet="ipa" ph="nɑːr">nah</phoneme> mate.',
