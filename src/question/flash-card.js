@@ -124,16 +124,17 @@ function (_, $, template) {
 
             if (valid) {
                 message = _.shuffle(messages.success)[0]
+                    + " '"
                     + correct
-                    + " is the correct answer";
+                    + "' is the correct answer";
 
                 $card.find('.validation-message').html('Correct!');
                 $card.find('.validation-icon').css({ 'background': 'url("/images/icon_tick.png")' });
             } else {
                 message = _.shuffle(messages.error)[0]
-                    + " "
+                    + " '"
                     + this.response
-                    + " is wrong. The answer was: "
+                    + "' is wrong. The answer was: "
                     + correct;
 
                 $card.find('.validation-message').html('Incorrect');
