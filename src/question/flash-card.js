@@ -11,6 +11,8 @@ function (_, $, template) {
 
     var playPromises = [];
 
+    const parenRgx = /\s?[\(\[].+?[\)\]]$/;
+
     var messages = {
         success: ["Sweet as!", "Too easy!", "Well done mate."],
         error: ["Yeh na, mate.", "Nope.", "Na ha."],
@@ -107,6 +109,7 @@ function (_, $, template) {
         onValidate: function () {
             var valid = this.facade.isValid(), message;
             var $card = this.init.$el.find('.card');
+            var correct = this.init.question.valid_response.replace(parenRgx, '');
 
             updateAttemptedCount();
 
@@ -117,7 +120,7 @@ function (_, $, template) {
 
             if (valid) {
                 message = _.shuffle(messages.success)[0]
-                    + this.init.question.valid_response
+                    + correct
                     + " is the correct answer";
 
                 $card.find('.validation-message').html('Correct!');
@@ -127,7 +130,7 @@ function (_, $, template) {
                     + " "
                     + this.response
                     + " is wrong. The answer was: "
-                    + this.init.question.valid_response;
+                    + correct;
 
                 $card.find('.validation-message').html('Incorrect');
                 $card.find('.validation-icon').css({ 'background': 'url("/images/icon_cross.png")' });
@@ -146,8 +149,9 @@ function (_, $, template) {
 
         playLabelAudio() {
             var lang = assessApp.flashcardState.lang;
+            var label = this.init.question.front_title.replace(parenRgx, '');
 
-            this.playAudio(lang, this.init.question.front_title);
+            this.playAudio(lang, label);
         },
 
         playAudio(lang, text) {
@@ -185,8 +189,7 @@ function (_, $, template) {
      * @returns {string}
      */
     function normalizeResponse(response) {
-        const repl = /\s?[\(\[].+?[\)\]]$/;
-        return response.toLowerCase().replace(repl, '');
+        return response.toLowerCase().replace(parenRgx, '');
     }
 
     _.extend(CustomQuestionScorer.prototype, {
