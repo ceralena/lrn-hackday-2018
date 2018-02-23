@@ -120,6 +120,11 @@ function (_, $, template) {
             e.preventDefault();
         });
 
+        $el.find('.button.exit').on('click', function (e) {
+            assessApp.submit();
+            e.preventDefault();
+        });
+
         $el.find('.button.skip, .back.face, .button.next').on('click', function (e) {
             assessApp.items().next();
             e.preventDefault();
@@ -132,8 +137,6 @@ function (_, $, template) {
         var correct = this.init.question.valid_response.replace(parenRgx, '');
 
         updateAttemptedCount();
-
-        assessApp.submit();
 
         $card
             .toggleClass('correct', valid)
