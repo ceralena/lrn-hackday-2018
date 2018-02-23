@@ -90,130 +90,122 @@ function (_, $, template) {
         questions[init.question.response_id] = this;
     }
 
-    _.extend(CustomQuestion.prototype, {
-        render() {
-            var question = this.init.question;
-            var lang = assessApp.flashcardState.lang;
+    CustomQuestion.prototype.render = function() {
+        var question = this.init.question;
+        var lang = assessApp.flashcardState.lang;
 
-            this.init.$el.html(template({
-                front: question.front_title,
-                back: question.valid_response,
-                attempted: assessApp.attemptedItems(),
-                lang: lang,
-                language: languageNames[lang]
-            }));
-        },
+        this.init.$el.html(template({
+            front: question.front_title,
+            back: question.valid_response,
+            attempted: assessApp.attemptedItems(),
+            lang: lang,
+            language: languageNames[lang]
+        }));
+    };
 
-        setupDomEvents(e) {
-            var $el = this.init.$el;
-            var events = this.init.events;
-            var facade = this.facade;
+    CustomQuestion.prototype.setupDomEvents = function(e) {
+        var $el = this.init.$el;
+        var events = this.init.events;
+        var facade = this.facade;
 
-            var self = this;
+        var self = this;
 
-            $el.find('input.response').on('keyup', function (e) {
-                var code = (e.keyCode ? e.keyCode : e.which);
+        $el.find('input.response').on('keyup', function (e) {
+            var code = (e.keyCode ? e.keyCode : e.which);
 
-                self.response = e.currentTarget.value;
-                events.trigger('changed', self.response);
+            self.response = e.currentTarget.value;
+            events.trigger('changed', self.response);
 
-                if (code === 13) {
-                    facade.validate();
-                }
-            });
-
-            $el.find('.button.check').on('click', function (e) {
+            if (code === 13) {
                 facade.validate();
-                e.preventDefault();
-            });
-
-            $el.find('.button.skip, .back.face, .button.next').on('click', function (e) {
-                assessApp.items().next();
-                e.preventDefault();
-            });
-        },
-
-        onValidate: function () {
-            var valid = this.facade.isValid(), message;
-            var $card = this.init.$el.find('.card');
-            var correct = this.init.question.valid_response.replace(parenRgx, '');
-
-            updateAttemptedCount();
-
-            $card
-                .toggleClass('correct', valid)
-                .toggleClass('incorrect', !valid)
-                .toggleClass('flipped');
-
-            if (valid) {
-                message = _.shuffle(messages.success)[0]
-                    + " '"
-                    + correct
-                    + "' is the correct answer";
-
-                $card.find('.validation-message').html('Correct!');
-                $card.find('.validation-icon').css({ 'background': 'url("/images/icon_tick.png")' });
-            } else {
-                message = _.shuffle(messages.error)[0]
-                    + " '"
-                    + this.response
-                    + "' is wrong. The answer was: "
-                    + correct;
-
-                $card.find('.validation-message').html('Incorrect');
-                $card.find('.validation-icon').css({ 'background': 'url("/images/icon_cross.png")' });
             }
+        });
 
-            if (assessApp.flashcardState.speech) {
-                this.playAudio('en', message);
-            }
-        },
+        $el.find('.button.check').on('click', function (e) {
+            facade.validate();
+            e.preventDefault();
+        });
 
-        clearValidation() {
-             this.init.$el.find('.card')
-                .removeClass('correct incorrect')
-                .toggleClass('flipped');
-        },
+        $el.find('.button.skip, .back.face, .button.next').on('click', function (e) {
+            assessApp.items().next();
+            e.preventDefault();
+        });
+    };
+    CustomQuestion.prototype.onValidate = function () {
+        var valid = this.facade.isValid(), message;
+        var $card = this.init.$el.find('.card');
+        var correct = this.init.question.valid_response.replace(parenRgx, '');
 
-        playLabelAudio() {
-            var lang = assessApp.flashcardState.lang;
-            var label = this.init.question.front_title.replace(parenRgx, '');
+        updateAttemptedCount();
 
-            this.playAudio(lang, label);
-        },
+        $card
+            .toggleClass('correct', valid)
+            .toggleClass('incorrect', !valid)
+            .toggleClass('flipped');
 
-        playAudio(lang, text) {
-            var ssml = '';
+        if (valid) {
+            message = _.shuffle(messages.success)[0]
+                + " '"
+                + correct
+                + "' is the correct answer";
 
-            this.stopAllAudio();
+            $card.find('.validation-message').html('Correct!');
+            $card.find('.validation-icon').css({ 'background': 'url("/images/icon_tick.png")' });
+        } else {
+            message = _.shuffle(messages.error)[0]
+                + " '"
+                + this.response
+                + "' is wrong. The answer was: "
+                + correct;
 
-            if (text.indexOf('<') > -1) {
-                text = `<speak>${text}</speak>`;
-                ssml = 'ssml=true&';
-            }
-
-            var audio = new Audio([`/speech.php?${ssml}lang=${lang}&text=${text}`]);
-
-            playPromises.push({
-                element: audio,
-                promise: audio.play()
-            });
-        },
-
-        stopAllAudio() {
-            _(playPromises).each(function (obj, index) {
-                obj.promise && obj.promise.then(function () {
-                    obj.element.pause();
-                    playPromises.splice(index, 1);
-                });
-            });
+            $card.find('.validation-message').html('Incorrect');
+            $card.find('.validation-icon').css({ 'background': 'url("/images/icon_cross.png")' });
         }
-    });
 
-    function CustomQuestionScorer(question, response) {
-        this.question = question;
-        this.response = response;
-    }
+        if (assessApp.flashcardState.speech) {
+            this.playAudio('en', message);
+        }
+    };
+
+    CustomQuestion.prototype.clearValidation = function () {
+         this.init.$el.find('.card')
+            .removeClass('correct incorrect')
+            .toggleClass('flipped');
+    };
+
+    CustomQuestion.prototype.playLabelAudio = function () {
+        var lang = assessApp.flashcardState.lang;
+        var label = this.init.question.front_title.replace(parenRgx, '');
+
+        this.playAudio(lang, label);
+    };
+
+    CustomQuestion.prototype.playAudio = function(lang, text) {
+        var ssml = '';
+
+        this.stopAllAudio();
+
+        if (text.indexOf('<') > -1) {
+            text = `<speak>${text}</speak>`;
+            ssml = 'ssml=true&';
+        }
+
+        var audio = new Audio([`/speech.php?${ssml}lang=${lang}&text=${text}`]);
+
+        playPromises.push({
+            element: audio,
+            promise: audio.play()
+        });
+    };
+
+    CustomQuestion.prototype.stopAllAudio = function() {
+        _(playPromises).each(function (obj, index) {
+            obj.promise && obj.promise.then(function () {
+                obj.element.pause();
+                playPromises.splice(index, 1);
+            });
+        });
+    };
 
     /**
      * Remove parenthesized elements from the response as we can't expect the user to input them correctly.
@@ -224,33 +216,33 @@ function (_, $, template) {
         return response.toLowerCase().replace(parenRgx, '');
     }
 
-    _.extend(CustomQuestionScorer.prototype, {
-        isValid: function () {
-            if (!this.response) {
-                return false;
-            }
-            let validResponses = this.question.valid_response.split(', ');
-            let isValid = false;
+    function CustomQuestionScorer(question, response) {
+        this.question = question;
+        this.response = response;
+    }
 
-            _.forEach(validResponses, (validResponse) => {
-                if (normalizeResponse(this.response) === normalizeResponse(validResponse)) {
-                    isValid = true;
-                    // returning false breaks the loop
-                    return false;
-                }
-            });
-
-            return isValid;
-        },
-
-        score: function () {
-            return this.isValid() ? this.maxScore() : 0;
-        },
-
-        maxScore: function () {
-            return this.question.score || 1;
+    CustomQuestionScorer.prototype.isValid = function () {
+        if (!this.response) {
+            return false;
         }
-    });
+        let validResponses = this.question.valid_response.split(', ');
+        let i;
+
+        for (i = 0; i < validResponses.length; i++) {
+            if (normalizeResponse(this.response) === normalizeResponse(validResponses[i])) {
+                return true
+            }
+        }
+        return false;
+    };
+
+    CustomQuestionScorer.prototype.score = function () {
+        return this.isValid() ? this.maxScore() : 0;
+    };
+
+    CustomQuestionScorer.prototype.maxScore = function () {
+        return this.question.score || 1;
+    };
 
     return {
         Question: CustomQuestion,
