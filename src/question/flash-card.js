@@ -14,11 +14,18 @@ function (_, $, template) {
     var messages = {
         success: ["Sweet as!", "Too easy!", "Well done mate."],
         error: [
-            '<phoneme alphabet="ipa" ph="jɜːr, nɑːr">yeah, nah</phoneme> mate.',
+            '<phoneme alphabet="ipa" ph="jɜːr">yeah</phoneme> <phoneme alphabet="ipa" ph="nɑːr">nah</phoneme> mate.',
             "Nah mate.",
             "Nope.",
             "Na ha."
         ]
+    };
+
+    const languageNames = {
+        'fr': 'French',
+        'ja': 'Japanese',
+        'es': 'Spanish',
+        'en': 'English'
     };
 
     // wrap event stuff inside a check for assessApp so that we can still execute successfully in server-side custom scoring
@@ -77,11 +84,14 @@ function (_, $, template) {
     _.extend(CustomQuestion.prototype, {
         render() {
             var question = this.init.question;
+            var lang = assessApp.flashcardState.lang;
 
             this.init.$el.html(template({
                 front: question.front_title,
                 back: question.valid_response,
-                attempted: assessApp.attemptedItems()
+                attempted: assessApp.attemptedItems(),
+                lang: lang,
+                language: languageNames[lang]
             }));
         },
 
