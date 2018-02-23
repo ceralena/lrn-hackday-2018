@@ -62,7 +62,6 @@ function (_, $, template) {
             var code = (e.keyCode ? e.keyCode : e.which);
 
             if (code === 39) {
-                assessApp.save();
                 assessApp.items().next();
             }
 
@@ -139,6 +138,8 @@ function (_, $, template) {
         var correct = this.init.question.valid_response.replace(parenRgx, '');
 
         updateAttemptedCount();
+
+        assessApp.submit();
 
         $card
             .toggleClass('correct', valid)
