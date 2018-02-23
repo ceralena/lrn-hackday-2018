@@ -46,6 +46,10 @@ function getLanguageConfig($shortLabel) {
         'es' => [
             'name' => 'Spanish',
             'shortCode' => 'es'
+        ],
+        'fr' => [
+            'name' => 'French',
+            'shortCode' => 'fr'
         ]
 	];
 

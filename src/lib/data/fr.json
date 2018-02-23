@@ -1,0 +1,3164 @@
+{
+  "words": [
+    {
+      "front": "le pas (adv,nm(pl))",
+      "back": "not, n’t; footstep"
+    },
+    {
+      "front": "vous (pro)",
+      "back": "you(pl)"
+    },
+    {
+      "front": "la chose (adj(f),nf)",
+      "back": "thing"
+    },
+    {
+      "front": "juste (adv,nadj(f))",
+      "back": "just, only; fair"
+    },
+    {
+      "front": "même (adj(f),adv,pro)",
+      "back": "same, even, self"
+    },
+    {
+      "front": "maintenant (adv)",
+      "back": "now"
+    },
+    {
+      "front": "autre (det,nadj(f),pro)",
+      "back": "other"
+    },
+    {
+      "front": "le temps (nm(pl))",
+      "back": "time"
+    },
+    {
+      "front": "la fois (nf(pl))",
+      "back": "time, times"
+    },
+    {
+      "front": "leur (det,adj(f),pro)",
+      "back": "them, their, theirs"
+    },
+    {
+      "front": "le mieux (adji(pl),adv,nm)",
+      "back": "better"
+    },
+    {
+      "front": "petit (nadj)",
+      "back": "small, little"
+    },
+    {
+      "front": "cela (pro)",
+      "back": "that, it"
+    },
+    {
+      "front": "le moins (adji(pl),adv,nm(pl),prep)",
+      "back": "less"
+    },
+    {
+      "front": "le gars (nm(pl))",
+      "back": "guy"
+    },
+    {
+      "front": "le fils (nm(pl))",
+      "back": "son"
+    },
+    {
+      "front": "venir (v)",
+      "back": "to come"
+    },
+    {
+      "front": "le sens (nm(pl))",
+      "back": "sense, meaning"
+    },
+    {
+      "front": "le cas (nm(pl))",
+      "back": "case"
+    },
+    {
+      "front": "la demande (nf)",
+      "back": "request, demand"
+    },
+    {
+      "front": "le mois (nm(pl))",
+      "back": "month"
+    },
+    {
+      "front": "bébé (nadj(f))",
+      "back": "baby"
+    },
+    {
+      "front": "revoir (v)",
+      "back": "to see again, revise"
+    },
+    {
+      "front": "le corps (nm(pl))",
+      "back": "body"
+    },
+    {
+      "front": "le vieux (adj(pl),nm(pl))",
+      "back": "old"
+    },
+    {
+      "front": "tiens (nadjpl,intj)",
+      "back": "ah, well"
+    },
+    {
+      "front": "la enfant, le enfant (nm,nf,adj(f))",
+      "back": "child"
+    },
+    {
+      "front": "venu (nadj)",
+      "back": "come"
+    },
+    {
+      "front": "le devant (adv,nm,prep)",
+      "back": "in front, ahead"
+    },
+    {
+      "front": "le vers (nm(pl),prep)",
+      "back": "toward"
+    },
+    {
+      "front": "gros (adv,nadj(pl))",
+      "back": "big"
+    },
+    {
+      "front": "demander (v)",
+      "back": "to ask for"
+    },
+    {
+      "front": "possible (adj(f))",
+      "back": "possible"
+    },
+    {
+      "front": "jeune (nadj(f))",
+      "back": "young"
+    },
+    {
+      "front": "le dehors (adv,nm(pl),prep)",
+      "back": "outside"
+    },
+    {
+      "front": "la semaine (nf)",
+      "back": "week"
+    },
+    {
+      "front": "le propos (nm(pl))",
+      "back": "remark, about"
+    },
+    {
+      "front": "le feu (adj(f),nm)",
+      "back": "fire"
+    },
+    {
+      "front": "le dessus (adv,nm(pl),prep)",
+      "back": "above, on top"
+    },
+    {
+      "front": "le pays (nm(pl))",
+      "back": "country"
+    },
+    {
+      "front": "la cours, le cours (nfpl,nm(pl))",
+      "back": "course"
+    },
+    {
+      "front": "le cinq (det,nm(pl))",
+      "back": "five"
+    },
+    {
+      "front": "le retour (nm)",
+      "back": "return"
+    },
+    {
+      "front": "mauvais (adv,nadj(pl))",
+      "back": "bad, wrong"
+    },
+    {
+      "front": "le quatre (det,nmi)",
+      "back": "four"
+    },
+    {
+      "front": "regarder (v)",
+      "back": "to look, watch"
+    },
+    {
+      "front": "le choix (nm(pl))",
+      "back": "choice"
+    },
+    {
+      "front": "le bas (adv,nadj(pl),nm(pl))",
+      "back": "low; stockings"
+    },
+    {
+      "front": "heureux (nadj(pl))",
+      "back": "happy, lucky, fortunate"
+    },
+    {
+      "front": "facile (adj(f))",
+      "back": "easy"
+    },
+    {
+      "front": "propre (nadj(f))",
+      "back": "clean, proper, own"
+    },
+    {
+      "front": "le drôle (adj(f),nm)",
+      "back": "funny, strange"
+    },
+    {
+      "front": "le lieu (nm)",
+      "back": "(the) place"
+    },
+    {
+      "front": "le devoir (nm,v)",
+      "back": "to have to, owe; duty"
+    },
+    {
+      "front": "difficile (nadj(f))",
+      "back": "difficult"
+    },
+    {
+      "front": "pire (nadj(f))",
+      "back": "worse, worst"
+    },
+    {
+      "front": "bizarre (nadj(f))",
+      "back": "strange, odd"
+    },
+    {
+      "front": "impossible (nadj(f))",
+      "back": "impossible"
+    },
+    {
+      "front": "calme (nadj(f))",
+      "back": "calm"
+    },
+    {
+      "front": "la ferme (adj(f),adv,nf)",
+      "back": "farm; firm"
+    },
+    {
+      "front": "le avis (nm(pl))",
+      "back": "opinion, mind"
+    },
+    {
+      "front": "la seconde (det,nf)",
+      "back": "second"
+    },
+    {
+      "front": "sérieux (nadj(pl))",
+      "back": "serious"
+    },
+    {
+      "front": "malade (nadj(f))",
+      "back": "ill, sick"
+    },
+    {
+      "front": "simple (nadj(f))",
+      "back": "simple"
+    },
+    {
+      "front": "le bras (nm(pl))",
+      "back": "arm"
+    },
+    {
+      "front": "le chemin (nm)",
+      "back": "path, way"
+    },
+    {
+      "front": "le retard (nm)",
+      "back": "delay"
+    },
+    {
+      "front": "le bois (nm(pl))",
+      "back": "wood"
+    },
+    {
+      "front": "pauvre (nadj(f))",
+      "back": "poor"
+    },
+    {
+      "front": "le devenir (nm,v)",
+      "back": "to become"
+    },
+    {
+      "front": "revenir (v)",
+      "back": "to come back"
+    },
+    {
+      "front": "le grave (adv,nadj(f),nm)",
+      "back": "serious, grave"
+    },
+    {
+      "front": "le reçu (nm)",
+      "back": "receipt, accepted"
+    },
+    {
+      "front": "la faux, le faux (adv,adj(pl),nm(pl),nf(pl))",
+      "back": "false; scythe"
+    },
+    {
+      "front": "acheter (v)",
+      "back": "to buy"
+    },
+    {
+      "front": "la venue (nf)",
+      "back": "coming"
+    },
+    {
+      "front": "le prix (nm(pl))",
+      "back": "price; prize"
+    },
+    {
+      "front": "la voix (nf(pl))",
+      "back": "voice"
+    },
+    {
+      "front": "incroyable (nadj(f))",
+      "back": "incredible, unbelievable"
+    },
+    {
+      "front": "retrouver (v)",
+      "back": "to find, recall"
+    },
+    {
+      "front": "le dos (nm(pl))",
+      "back": "back"
+    },
+    {
+      "front": "sale (nadj(f))",
+      "back": "dirty"
+    },
+    {
+      "front": "anniversaire (nadj(f))",
+      "back": "anniversary, birthday"
+    },
+    {
+      "front": "la paix (nf(pl))",
+      "back": "peace"
+    },
+    {
+      "front": "libre (adj(f))",
+      "back": "free"
+    },
+    {
+      "front": "rouge (nadj(f))",
+      "back": "red"
+    },
+    {
+      "front": "retourner (v)",
+      "back": "to return, go back"
+    },
+    {
+      "front": "stupide (adj(f))",
+      "back": "stupid, silly, bemused"
+    },
+    {
+      "front": "magnifique (adj(f))",
+      "back": "magnificent"
+    },
+    {
+      "front": "gauche (nadj(f))",
+      "back": "left"
+    },
+    {
+      "front": "le dedans (adv,nm(pl),prep)",
+      "back": "inside, indoors"
+    },
+    {
+      "front": "selon (prep)",
+      "back": "according to"
+    },
+    {
+      "front": "tenir (v)",
+      "back": "to hold"
+    },
+    {
+      "front": "exact (adj)",
+      "back": "exact, correct"
+    },
+    {
+      "front": "la recherche (nf)",
+      "back": "research, search"
+    },
+    {
+      "front": "le but (nm)",
+      "back": "goal, aim, objective, purpose"
+    },
+    {
+      "front": "debout (adv)",
+      "back": "standing"
+    },
+    {
+      "front": "dangereux (adj(pl))",
+      "back": "dangerous"
+    },
+    {
+      "front": "tranquille (adj(f))",
+      "back": "quiet"
+    },
+    {
+      "front": "triste (adj(f))",
+      "back": "sad"
+    },
+    {
+      "front": "la relation (nf)",
+      "back": "relationship"
+    },
+    {
+      "front": "le travers (nm(pl))",
+      "back": "breadth, across; fault, amiss"
+    },
+    {
+      "front": "le lieutenant (nm)",
+      "back": "lieutenant"
+    },
+    {
+      "front": "étrange (nadj(f))",
+      "back": "strange, odd"
+    },
+    {
+      "front": "le cheval (nm)",
+      "back": "horse"
+    },
+    {
+      "front": "responsable (nadj(f))",
+      "back": "responsible"
+    },
+    {
+      "front": "coupable (nadj(f))",
+      "back": "guilty"
+    },
+    {
+      "front": "emmener (v)",
+      "back": "to take"
+    },
+    {
+      "front": "amoureux (nadj(pl))",
+      "back": "in love, amorous"
+    },
+    {
+      "front": "capable (adj(f))",
+      "back": "able, capable"
+    },
+    {
+      "front": "jeter (v)",
+      "back": "to throw"
+    },
+    {
+      "front": "le nez (nm(pl))",
+      "back": "nose"
+    },
+    {
+      "front": "le héros (nm(pl))",
+      "back": "hero"
+    },
+    {
+      "front": "horrible (adj(f))",
+      "back": "horrible, terrible, dreadful, hideous"
+    },
+    {
+      "front": "le secours (nm(pl))",
+      "back": "help, aid, assistance"
+    },
+    {
+      "front": "terrible (adj(f))",
+      "back": "terrible, dreadful"
+    },
+    {
+      "front": "inutile (nadj(f))",
+      "back": "useless"
+    },
+    {
+      "front": "le tas (nm(pl))",
+      "back": "pile, lots of"
+    },
+    {
+      "front": "bête (nadj(f))",
+      "back": "animal, beast; stupid"
+    },
+    {
+      "front": "ridicule (nadj(f))",
+      "back": "ridiculous, silly"
+    },
+    {
+      "front": "le avenir (nm)",
+      "back": "future"
+    },
+    {
+      "front": "le procès (nm(pl))",
+      "back": "trial, proceedings"
+    },
+    {
+      "front": "le revenu (nm)",
+      "back": "income"
+    },
+    {
+      "front": "anglais (nadj(pl))",
+      "back": "English"
+    },
+    {
+      "front": "vide (nadj(f))",
+      "back": "empty"
+    },
+    {
+      "front": "merveilleux (adj(pl))",
+      "back": "marvellous, wonderful"
+    },
+    {
+      "front": "la fenêtre (nf)",
+      "back": "window"
+    },
+    {
+      "front": "le souvenir (nm,v)",
+      "back": "memory; to remember"
+    },
+    {
+      "front": "lorsque (conj)",
+      "back": "when"
+    },
+    {
+      "front": "la rose (nadj(f),nf)",
+      "back": "rose; pink"
+    },
+    {
+      "front": "proche (adv,nadj(f),prep)",
+      "back": "nearby, close"
+    },
+    {
+      "front": "honnête (adj(f))",
+      "back": "honest, decent, fair"
+    },
+    {
+      "front": "rapide (nadj(f))",
+      "back": "fast, quick"
+    },
+    {
+      "front": "remettre (v)",
+      "back": "to deliver, replace, set, put"
+    },
+    {
+      "front": "le portable (adj(f),nm)",
+      "back": "portable, wearable; cell phone"
+    },
+    {
+      "front": "rappeler (v)",
+      "back": "to recall, call back"
+    },
+    {
+      "front": "la mademoiselle (nf)",
+      "back": "Miss"
+    },
+    {
+      "front": "énorme (adj(f))",
+      "back": "enormous"
+    },
+    {
+      "front": "monstre (nadj(f))",
+      "back": "monster"
+    },
+    {
+      "front": "riche (nadj(f))",
+      "back": "rich"
+    },
+    {
+      "front": "le envers (nm(pl),prep)",
+      "back": "towards"
+    },
+    {
+      "front": "nécessaire (nadj(f))",
+      "back": "necessary, required"
+    },
+    {
+      "front": "le bus (nm(pl))",
+      "back": "bus"
+    },
+    {
+      "front": "ennemi (nadj)",
+      "back": "enemy"
+    },
+    {
+      "front": "le repas (nm(pl))",
+      "back": "meal"
+    },
+    {
+      "front": "politique (nadj(f))",
+      "back": "politics; political"
+    },
+    {
+      "front": "double (nadj(f))",
+      "back": "double"
+    },
+    {
+      "front": "le permis (nm(pl))",
+      "back": "license, permit, permitted"
+    },
+    {
+      "front": "contraire (nadj(f))",
+      "back": "opposite, contrary"
+    },
+    {
+      "front": "joyeux (nadj(pl))",
+      "back": "merry, joyful, happy"
+    },
+    {
+      "front": "puisque (conj)",
+      "back": "since"
+    },
+    {
+      "front": "le accès (nm(pl))",
+      "back": "access"
+    },
+    {
+      "front": "remercier (v)",
+      "back": "to thank"
+    },
+    {
+      "front": "le frais (adj(pl),nm(pl))",
+      "back": "cool, fresh; fee, expense"
+    },
+    {
+      "front": "rejoindre (v)",
+      "back": "to rejoin, reunite"
+    },
+    {
+      "front": "superbe (nadj(f))",
+      "back": "superb, magnificient, handsome, gorgeous"
+    },
+    {
+      "front": "faible (nadj(f))",
+      "back": "weak"
+    },
+    {
+      "front": "formidable (adj(f))",
+      "back": "tremendous, considerable"
+    },
+    {
+      "front": "moindre (adj(f))",
+      "back": "lesser, least, slightest"
+    },
+    {
+      "front": "unique (adj(f))",
+      "back": "unique"
+    },
+    {
+      "front": "français (nadj(pl))",
+      "back": "French"
+    },
+    {
+      "front": "amener (v)",
+      "back": "to bring"
+    },
+    {
+      "front": "le os (nm(pl))",
+      "back": "bone"
+    },
+    {
+      "front": "utile (adj(f))",
+      "back": "useful"
+    },
+    {
+      "front": "le discours (nm(pl))",
+      "back": "speech, talk, discourse"
+    },
+    {
+      "front": "le regard (nm)",
+      "back": "look, glance"
+    },
+    {
+      "front": "reprendre (v)",
+      "back": "to resume, recover, start again, take back"
+    },
+    {
+      "front": "mince (adj(f),intj)",
+      "back": "thin, slim, slender"
+    },
+    {
+      "front": "aise (nadj(f))",
+      "back": "comfort, joy, pleasure, ease"
+    },
+    {
+      "front": "le succès (nm(pl))",
+      "back": "success"
+    },
+    {
+      "front": "doux (adv,nadj(pl))",
+      "back": "soft, sweet"
+    },
+    {
+      "front": "lever (v)",
+      "back": "to lift, raise"
+    },
+    {
+      "front": "surpris (adj(pl))",
+      "back": "surprised, amazed"
+    },
+    {
+      "front": "recevoir (v)",
+      "back": "to receive"
+    },
+    {
+      "front": "le poids (nm(pl))",
+      "back": "weight"
+    },
+    {
+      "front": "prévenir (v)",
+      "back": "to prevent, warn; to notify"
+    },
+    {
+      "front": "fantastique (nadj(f))",
+      "back": "fantastic, terrific, great, weird, eerie"
+    },
+    {
+      "front": "la retraite (nf)",
+      "back": "retirement, pension"
+    },
+    {
+      "front": "le paradis (nm(pl))",
+      "back": "paradise, heaven"
+    },
+    {
+      "front": "agréable (nadj(f))",
+      "back": "pleasant, nice, agreeable"
+    },
+    {
+      "front": "le univers (nm(pl))",
+      "back": "universe"
+    },
+    {
+      "front": "convaincre (v)",
+      "back": "to convince"
+    },
+    {
+      "front": "nerveux (nadj(pl))",
+      "back": "nervous, irritable"
+    },
+    {
+      "front": "vôtre (nadj(f))",
+      "back": "yours"
+    },
+    {
+      "front": "reposer (v)",
+      "back": "to rest"
+    },
+    {
+      "front": "le gaz (nm(pl))",
+      "back": "gas"
+    },
+    {
+      "front": "chinois (nadj(pl))",
+      "back": "Chinese"
+    },
+    {
+      "front": "immeuble (nadj(f))",
+      "back": "building"
+    },
+    {
+      "front": "aveugle (nadj(f))",
+      "back": "blind"
+    },
+    {
+      "front": "la leçon (nf)",
+      "back": "lesson"
+    },
+    {
+      "front": "militaire (nadj(f))",
+      "back": "military"
+    },
+    {
+      "front": "retirer (v)",
+      "back": "to remove, withdraw"
+    },
+    {
+      "front": "célèbre (adj(f))",
+      "back": "famous"
+    },
+    {
+      "front": "la chemise (nf)",
+      "back": "shirt, folder"
+    },
+    {
+      "front": "la souris (nf(pl))",
+      "back": "mouse"
+    },
+    {
+      "front": "le repos (nm(pl))",
+      "back": "rest"
+    },
+    {
+      "front": "véritable (adj(f))",
+      "back": "real, true"
+    },
+    {
+      "front": "le second (adj,det,nm)",
+      "back": "second"
+    },
+    {
+      "front": "le ours (adji,nm(pl))",
+      "back": "bear"
+    },
+    {
+      "front": "romantique (nadj(f))",
+      "back": "romantic"
+    },
+    {
+      "front": "le dessous (adv,nm(pl),prep)",
+      "back": "underneath, below, bottom, underside"
+    },
+    {
+      "front": "la secrétaire, le secrétaire (nm,nf)",
+      "back": "secretary"
+    },
+    {
+      "front": "nombreux (adj(pl))",
+      "back": "numerous"
+    },
+    {
+      "front": "la vache (adj(f),nf)",
+      "back": "cow"
+    },
+    {
+      "front": "logique (nadj(f))",
+      "back": "logic, logical"
+    },
+    {
+      "front": "sage (nadj(f))",
+      "back": "wise, good, sound, sensible"
+    },
+    {
+      "front": "liquide (nadj(f))",
+      "back": "liquid"
+    },
+    {
+      "front": "la mesure (nf)",
+      "back": "measure"
+    },
+    {
+      "front": "physique (nadj(f))",
+      "back": "physical, physics"
+    },
+    {
+      "front": "la alerte (adj(f),nf)",
+      "back": "agile, alert, warning"
+    },
+    {
+      "front": "artiste (nadj(f))",
+      "back": "artist"
+    },
+    {
+      "front": "le virus (nm(pl))",
+      "back": "virus"
+    },
+    {
+      "front": "sombre (adj(f))",
+      "back": "dark"
+    },
+    {
+      "front": "cependant (adv,conj)",
+      "back": "however"
+    },
+    {
+      "front": "adulte (nadj(f))",
+      "back": "adult"
+    },
+    {
+      "front": "le concours (nm(pl))",
+      "back": "entrance exam, competition"
+    },
+    {
+      "front": "le crâne (adj(f),nm)",
+      "back": "skull"
+    },
+    {
+      "front": "élevé (adj)",
+      "back": "high, heavy, tall"
+    },
+    {
+      "front": "russe (nadj(f))",
+      "back": "Russian"
+    },
+    {
+      "front": "le demi (adji,adv,nm)",
+      "back": "half"
+    },
+    {
+      "front": "magique (adj(f))",
+      "back": "magic; magical"
+    },
+    {
+      "front": "refaire (v)",
+      "back": "to redo, make again"
+    },
+    {
+      "front": "la tenue (nf)",
+      "back": "dress, outfit"
+    },
+    {
+      "front": "le uniforme (adj(f),nm)",
+      "back": "uniform, steady, regular"
+    },
+    {
+      "front": "scientifique (nadj(f))",
+      "back": "scientific"
+    },
+    {
+      "front": "recommencer (v)",
+      "back": "to resume, start again"
+    },
+    {
+      "front": "deviner (v)",
+      "back": "to guess, solve"
+    },
+    {
+      "front": "le fonds (nm(pl))",
+      "back": "funds"
+    },
+    {
+      "front": "curieux (nadj(pl))",
+      "back": "curious"
+    },
+    {
+      "front": "remonter (v)",
+      "back": "to go back up"
+    },
+    {
+      "front": "rare (adj(f))",
+      "back": "rare"
+    },
+    {
+      "front": "affreux (nadj(pl))",
+      "back": "dreadful, awful, horrible"
+    },
+    {
+      "front": "le tapis (nm(pl))",
+      "back": "carpet, mat, covering"
+    },
+    {
+      "front": "pratique (nadj(f))",
+      "back": "practice, practical"
+    },
+    {
+      "front": "célibataire (nadj(f))",
+      "back": "single, unmarried"
+    },
+    {
+      "front": "panique (nadj(f))",
+      "back": "panic"
+    },
+    {
+      "front": "le mars (nm(pl))",
+      "back": "March; Mars"
+    },
+    {
+      "front": "le pis (adv,nm(pl))",
+      "back": "worse"
+    },
+    {
+      "front": "vierge (nadj(f))",
+      "back": "virgin"
+    },
+    {
+      "front": "le palais (nm(pl))",
+      "back": "palace, palate"
+    },
+    {
+      "front": "extraordinaire (adj(f))",
+      "back": "extraordinary"
+    },
+    {
+      "front": "classique (nadj(f))",
+      "back": "classic"
+    },
+    {
+      "front": "japonais (nadj(pl))",
+      "back": "Japanese"
+    },
+    {
+      "front": "technique (nadj(f))",
+      "back": "technique, technics, technical"
+    },
+    {
+      "front": "jaune (adv,nadj(f))",
+      "back": "yellow"
+    },
+    {
+      "front": "clinique (nadj(f))",
+      "back": "clinic"
+    },
+    {
+      "front": "courageux (nadj(pl))",
+      "back": "courageous"
+    },
+    {
+      "front": "retenir (v)",
+      "back": "to retain, hold back, remember"
+    },
+    {
+      "front": "précis (nadj(pl))",
+      "back": "precise"
+    },
+    {
+      "front": "le printemps (nm(pl))",
+      "back": "spring"
+    },
+    {
+      "front": "mobile (nadj(f))",
+      "back": "mobile, portable"
+    },
+    {
+      "front": "sauvage (nadj(f))",
+      "back": "savage, wild"
+    },
+    {
+      "front": "le rat (adj(f),nm)",
+      "back": "rat"
+    },
+    {
+      "front": "reconnaître (v)",
+      "back": "to recognize"
+    },
+    {
+      "front": "la collègue, le collègue (nm,nf)",
+      "back": "colleague"
+    },
+    {
+      "front": "exprès (adj(pl),adv)",
+      "back": "deliberately, on purpose, intentionally"
+    },
+    {
+      "front": "raisonnable (adj(f))",
+      "back": "reasonable, fair"
+    },
+    {
+      "front": "refuser (v)",
+      "back": "to refuse"
+    },
+    {
+      "front": "sensible (nadj(f))",
+      "back": "sensitive"
+    },
+    {
+      "front": "malheureux (nadj(pl))",
+      "back": "unhappy, miserable"
+    },
+    {
+      "front": "critique (nadj(f))",
+      "back": "criticism, critic, critical"
+    },
+    {
+      "front": "ordinaire (nadj(f))",
+      "back": "ordinary"
+    },
+    {
+      "front": "la croix (nf(pl))",
+      "back": "cross"
+    },
+    {
+      "front": "solide (nadj(f))",
+      "back": "solid"
+    },
+    {
+      "front": "digne (adj(f))",
+      "back": "dignified, worthy"
+    },
+    {
+      "front": "le large (adj(f),adv,nm)",
+      "back": "wide, width"
+    },
+    {
+      "front": "le taux (nm(pl))",
+      "back": "rate"
+    },
+    {
+      "front": "incapable (nadj(f))",
+      "back": "incapable, incompetent"
+    },
+    {
+      "front": "furieux (nadj(pl))",
+      "back": "furious, raging, violent"
+    },
+    {
+      "front": "la remise (nf)",
+      "back": "presentation, delivery"
+    },
+    {
+      "front": "le décès (nm(pl))",
+      "back": "death"
+    },
+    {
+      "front": "populaire (nadj(f))",
+      "back": "popular"
+    },
+    {
+      "front": "la cave, le cave (adj(f),nm,nf)",
+      "back": "cellar, basement"
+    },
+    {
+      "front": "précieux (nadj(pl))",
+      "back": "precious"
+    },
+    {
+      "front": "injuste (adj(f))",
+      "back": "unfair, unjust"
+    },
+    {
+      "front": "le progrès (nm(pl))",
+      "back": "progress"
+    },
+    {
+      "front": "nôtre (nadj(f))",
+      "back": "ours, our own"
+    },
+    {
+      "front": "illégal (adj)",
+      "back": "illegal"
+    },
+    {
+      "front": "électrique (adj(f))",
+      "back": "electric"
+    },
+    {
+      "front": "absurde (nadj(f))",
+      "back": "absurd"
+    },
+    {
+      "front": "élever (v)",
+      "back": "to grow, lift, raise"
+    },
+    {
+      "front": "le enregistrement (nm)",
+      "back": "recording, registration, check-in, logging"
+    },
+    {
+      "front": "noble (nadj(f))",
+      "back": "noble"
+    },
+    {
+      "front": "le stress (nm(pl))",
+      "back": "stress"
+    },
+    {
+      "front": "interne (nadj(f))",
+      "back": "internal, interior, intern"
+    },
+    {
+      "front": "pervers (nadj(pl))",
+      "back": "pervert, perverse, perverted"
+    },
+    {
+      "front": "plastique (nadj(f))",
+      "back": "plastic"
+    },
+    {
+      "front": "repartir (v)",
+      "back": "to set off again, start up again"
+    },
+    {
+      "front": "la vague (nadj(f),nf)",
+      "back": "vague; wave"
+    },
+    {
+      "front": "esclave (nadj(f))",
+      "back": "slave"
+    },
+    {
+      "front": "soutenir (v)",
+      "back": "to sustain, support"
+    },
+    {
+      "front": "efficace (adj(f))",
+      "back": "efficient, effective"
+    },
+    {
+      "front": "la religion (nf)",
+      "back": "religion"
+    },
+    {
+      "front": "le remède (nm)",
+      "back": "cure, remedy"
+    },
+    {
+      "front": "fidèle (nadj(f))",
+      "back": "faithful"
+    },
+    {
+      "front": "généreux (adj(pl))",
+      "back": "generous"
+    },
+    {
+      "front": "le congrès (nm(pl))",
+      "back": "congress, conference"
+    },
+    {
+      "front": "nucléaire (adj(f))",
+      "back": "nuclear"
+    },
+    {
+      "front": "la avenue (nf)",
+      "back": "avenue"
+    },
+    {
+      "front": "disponible (adj(f))",
+      "back": "available"
+    },
+    {
+      "front": "ressentir (v)",
+      "back": "to feel"
+    },
+    {
+      "front": "la reconnaissance (nf)",
+      "back": "recognition, gratitude"
+    },
+    {
+      "front": "le processus (nm(pl))",
+      "back": "process"
+    },
+    {
+      "front": "quoique (conj)",
+      "back": "although, though"
+    },
+    {
+      "front": "la remarque (nf)",
+      "back": "remark"
+    },
+    {
+      "front": "complexe (nadj(f))",
+      "back": "complex"
+    },
+    {
+      "front": "promener (v)",
+      "back": "to take for a walk, go for a walk"
+    },
+    {
+      "front": "tendre (nadj(f),v)",
+      "back": "to tighten; to extend, stretch; tender"
+    },
+    {
+      "front": "reconnaissant (adj)",
+      "back": "grateful"
+    },
+    {
+      "front": "timide (nadj(f))",
+      "back": "timid, shy, bashful"
+    },
+    {
+      "front": "complice (nadj(f))",
+      "back": "accomplice"
+    },
+    {
+      "front": "sincère (adj(f))",
+      "back": "sincere"
+    },
+    {
+      "front": "solitaire (nadj(f))",
+      "back": "solitary, lone, lonely"
+    },
+    {
+      "front": "ressembler (v)",
+      "back": "to look like, resemble"
+    },
+    {
+      "front": "volontaire (nadj(f))",
+      "back": "volunteer; voluntary"
+    },
+    {
+      "front": "moderne (nadj(f))",
+      "back": "modern"
+    },
+    {
+      "front": "invisible (adj(f))",
+      "back": "invisible"
+    },
+    {
+      "front": "probable (adj(f))",
+      "back": "probable, likely"
+    },
+    {
+      "front": "aimable (adj(f))",
+      "back": "pleasant, kind, nice"
+    },
+    {
+      "front": "immense (adj(f))",
+      "back": "immense"
+    },
+    {
+      "front": "le chaos (nm(pl))",
+      "back": "chaos"
+    },
+    {
+      "front": "regretter (v)",
+      "back": "to regret"
+    },
+    {
+      "front": "maintenir (v)",
+      "back": "to maintain"
+    },
+    {
+      "front": "stable (adj(f))",
+      "back": "stable"
+    },
+    {
+      "front": "la revanche (nf)",
+      "back": "revenge; return"
+    },
+    {
+      "front": "bienvenu (nadj)",
+      "back": "welcome"
+    },
+    {
+      "front": "la prime (nadj(f),nf)",
+      "back": "free gift, premium, bonus"
+    },
+    {
+      "front": "douloureux (adj(pl))",
+      "back": "painful, grievous, distressing"
+    },
+    {
+      "front": "remarquer (v)",
+      "back": "to remark; to notice, point out"
+    },
+    {
+      "front": "légitime (nadj(f))",
+      "back": "legitimate"
+    },
+    {
+      "front": "le record (nm)",
+      "back": "record"
+    },
+    {
+      "front": "le puits (nm(pl))",
+      "back": "well, shaft, pit"
+    },
+    {
+      "front": "renoncer (v)",
+      "back": "to give up, renounce"
+    },
+    {
+      "front": "le époux (nm(pl))",
+      "back": "husband, spouse"
+    },
+    {
+      "front": "la revue (nf)",
+      "back": "review, magazine, journal"
+    },
+    {
+      "front": "remarquable (adj(f))",
+      "back": "remarkable, outstanding"
+    },
+    {
+      "front": "suprême (nadj(f))",
+      "back": "supreme"
+    },
+    {
+      "front": "gris (nadj(pl))",
+      "back": "grey"
+    },
+    {
+      "front": "silencieux (nadj(pl))",
+      "back": "silent, noiseless, silencer"
+    },
+    {
+      "front": "historique (nadj(f))",
+      "back": "historical"
+    },
+    {
+      "front": "le compromis (nm(pl))",
+      "back": "compromise, agreement"
+    },
+    {
+      "front": "tragique (nadj(f))",
+      "back": "tragic"
+    },
+    {
+      "front": "la demeure (nf)",
+      "back": "residence, home"
+    },
+    {
+      "front": "mystérieux (nadj(pl))",
+      "back": "mysterious, secretive"
+    },
+    {
+      "front": "le genou (nm)",
+      "back": "knee"
+    },
+    {
+      "front": "fragile (adj(f))",
+      "back": "fragile, delicate, frail"
+    },
+    {
+      "front": "quelconque (adj(f))",
+      "back": "any, some"
+    },
+    {
+      "front": "le trouble (adj(f),nm)",
+      "back": "turmoil, agitation, blurred, cloudy, trouble"
+    },
+    {
+      "front": "le gras (adj(pl),nm(pl))",
+      "back": "fatty, fat, greasy"
+    },
+    {
+      "front": "confortable (adj(f))",
+      "back": "comfortable"
+    },
+    {
+      "front": "judiciaire (adj(f))",
+      "back": "judiciary"
+    },
+    {
+      "front": "spécialiste (nadj(f))",
+      "back": "specialist"
+    },
+    {
+      "front": "irlandais (nadj(pl))",
+      "back": "Irish"
+    },
+    {
+      "front": "suisse (nadj(f))",
+      "back": "Swiss"
+    },
+    {
+      "front": "anonyme (adj(f))",
+      "back": "anonymous"
+    },
+    {
+      "front": "le août (nm)",
+      "back": "August"
+    },
+    {
+      "front": "acide (nadj(f))",
+      "back": "acid"
+    },
+    {
+      "front": "enregistrer (v)",
+      "back": "to record, check in"
+    },
+    {
+      "front": "intime (nadj(f))",
+      "back": "intimate, close, secret, private"
+    },
+    {
+      "front": "informatique (nadj(f))",
+      "back": "computer science, computing"
+    },
+    {
+      "front": "la recette (nf)",
+      "back": "recipe"
+    },
+    {
+      "front": "la illusion (nf)",
+      "back": "illusion"
+    },
+    {
+      "front": "relever (v)",
+      "back": "to raise"
+    },
+    {
+      "front": "la retenue (nf)",
+      "back": "deduction; restraint, self-control"
+    },
+    {
+      "front": "glisser (v)",
+      "back": "to slide, slip"
+    },
+    {
+      "front": "intense (adj(f))",
+      "back": "intense, severe, dense"
+    },
+    {
+      "front": "contenu (nadj)",
+      "back": "contents"
+    },
+    {
+      "front": "le refuge (nm)",
+      "back": "refuge"
+    },
+    {
+      "front": "le sauvetage (nm)",
+      "back": "rescue, salvaging"
+    },
+    {
+      "front": "la reporter, le reporter (nm,nf,v)",
+      "back": "to report; to postpone"
+    },
+    {
+      "front": "britannique (nadj(f))",
+      "back": "British"
+    },
+    {
+      "front": "le représentant (nm)",
+      "back": "representative"
+    },
+    {
+      "front": "inverse (nadj(f))",
+      "back": "opposite, reverse"
+    },
+    {
+      "front": "confus (adj(pl))",
+      "back": "confused, embarrassed"
+    },
+    {
+      "front": "catholique (nadj(f))",
+      "back": "Catholic"
+    },
+    {
+      "front": "fameux (adj(pl))",
+      "back": "famous"
+    },
+    {
+      "front": "relevé (nadj)",
+      "back": "statement, list; relieved; put in relief; rolled up"
+    },
+    {
+      "front": "comptable (nadj(f))",
+      "back": "accountant, accountable"
+    },
+    {
+      "front": "temporaire (adj(f))",
+      "back": "temporary"
+    },
+    {
+      "front": "le relais (nm(pl))",
+      "back": "shift, relay"
+    },
+    {
+      "front": "génétique (nadj(f))",
+      "back": "genetic"
+    },
+    {
+      "front": "pénible (adj(f))",
+      "back": "hard, difficult, painful, tiresome"
+    },
+    {
+      "front": "biologique (adj(f))",
+      "back": "biological, nature"
+    },
+    {
+      "front": "extrême (nadj(f))",
+      "back": "extreme"
+    },
+    {
+      "front": "développer (v)",
+      "back": "to develop"
+    },
+    {
+      "front": "tactique (nadj(f))",
+      "back": "tactics, tactical"
+    },
+    {
+      "front": "ultime (adj(f))",
+      "back": "ultimate"
+    },
+    {
+      "front": "reculer (v)",
+      "back": "to move back, back up"
+    },
+    {
+      "front": "pâle (adj(f))",
+      "back": "pale"
+    },
+    {
+      "front": "honorable (adj(f))",
+      "back": "honorable"
+    },
+    {
+      "front": "solaire (adj(f))",
+      "back": "solar"
+    },
+    {
+      "front": "la levée (nf)",
+      "back": "raising, levying, levee"
+    },
+    {
+      "front": "automatique (adj(f))",
+      "back": "automatic"
+    },
+    {
+      "front": "décevoir (v)",
+      "back": "to disappoint"
+    },
+    {
+      "front": "artistique (adj(f))",
+      "back": "artistic"
+    },
+    {
+      "front": "vulnérable (adj(f))",
+      "back": "vulnerable"
+    },
+    {
+      "front": "domestique (nadj(f))",
+      "back": "servant, domestic"
+    },
+    {
+      "front": "le ressort (nm)",
+      "back": "spring; resort; spirit"
+    },
+    {
+      "front": "dramatique (nadj(f))",
+      "back": "dramatic, tragic, drama"
+    },
+    {
+      "front": "la typique (nadj(f),nf)",
+      "back": "typical"
+    },
+    {
+      "front": "fiable (adj(f))",
+      "back": "reliable, trustworthy"
+    },
+    {
+      "front": "rechercher (v)",
+      "back": "to search for"
+    },
+    {
+      "front": "pacifique (adj(f))",
+      "back": "peaceful, peace-loving"
+    },
+    {
+      "front": "repérer (v)",
+      "back": "to spot, pick out, locate, find"
+    },
+    {
+      "front": "arabe (nadj(f))",
+      "back": "Arabic, Arab"
+    },
+    {
+      "front": "secondaire (nadj(f))",
+      "back": "secondary"
+    },
+    {
+      "front": "vulgaire (nadj(f))",
+      "back": "vulgar, common, popular"
+    },
+    {
+      "front": "téléphonique (adj(f))",
+      "back": "telephone"
+    },
+    {
+      "front": "triple (nadj(f))",
+      "back": "triple"
+    },
+    {
+      "front": "scolaire (adj(f))",
+      "back": "school, educational, academic"
+    },
+    {
+      "front": "raciste (nadj(f))",
+      "back": "racist"
+    },
+    {
+      "front": "repousser (v)",
+      "back": "to push away, postpone"
+    },
+    {
+      "front": "le parcours (nm(pl))",
+      "back": "journey, course, route"
+    },
+    {
+      "front": "le regret (nm)",
+      "back": "regret, regretfully"
+    },
+    {
+      "front": "électronique (nadj(f))",
+      "back": "electronic"
+    },
+    {
+      "front": "modeste (adj(f))",
+      "back": "modest"
+    },
+    {
+      "front": "représenter (v)",
+      "back": "to represent"
+    },
+    {
+      "front": "alimentaire (adj(f))",
+      "back": "food"
+    },
+    {
+      "front": "détenu (nadj)",
+      "back": "prisoner"
+    },
+    {
+      "front": "éthique (nadj(f))",
+      "back": "ethical, ethics"
+    },
+    {
+      "front": "tiers (nadj(pl))",
+      "back": "third"
+    },
+    {
+      "front": "le prétexte (nadj(f),nm)",
+      "back": "pretext"
+    },
+    {
+      "front": "valable (adj(f))",
+      "back": "valid"
+    },
+    {
+      "front": "chimique (adj(f))",
+      "back": "chemical"
+    },
+    {
+      "front": "maigre (nadj(f))",
+      "back": "thin, skinny, slim, lean"
+    },
+    {
+      "front": "religieux (nadj(pl))",
+      "back": "religious"
+    },
+    {
+      "front": "primaire (nadj(f))",
+      "back": "primary"
+    },
+    {
+      "front": "sympathique (nadj(f))",
+      "back": "likeable, nice, pleasant"
+    },
+    {
+      "front": "instable (adj(f))",
+      "back": "unstable"
+    },
+    {
+      "front": "inévitable (adj(f))",
+      "back": "unavoidable, inevitable"
+    },
+    {
+      "front": "insupportable (adj(f))",
+      "back": "intolerable"
+    },
+    {
+      "front": "rude (nadj(f))",
+      "back": "rough, harsh, hard, tough"
+    },
+    {
+      "front": "sévère (adj(f))",
+      "back": "severe"
+    },
+    {
+      "front": "humide (adj(f))",
+      "back": "moist, damp, humid, wet"
+    },
+    {
+      "front": "rebelle (nadj(f))",
+      "back": "rebel, rebellious"
+    },
+    {
+      "front": "raide (adj(f))",
+      "back": "stiff, straight"
+    },
+    {
+      "front": "authentique (adj(f))",
+      "back": "genuine, authentic"
+    },
+    {
+      "front": "humble (adj(f))",
+      "back": "humble, lowly"
+    },
+    {
+      "front": "communiste (nadj(f))",
+      "back": "communist"
+    },
+    {
+      "front": "ressortir (v)",
+      "back": "to go out again, come out again, take out again"
+    },
+    {
+      "front": "psychologique (adj(f))",
+      "back": "psychological"
+    },
+    {
+      "front": "le refus (nm(pl))",
+      "back": "refusal"
+    },
+    {
+      "front": "réaliste (nadj(f))",
+      "back": "realist, realistic"
+    },
+    {
+      "front": "le abus (nm(pl))",
+      "back": "abuse, misuse, breach"
+    },
+    {
+      "front": "juridique (adj(f))",
+      "back": "legal, judicial"
+    },
+    {
+      "front": "vaste (adj(f))",
+      "back": "vast, immense"
+    },
+    {
+      "front": "relâcher (v)",
+      "back": "to loosen, release, let go"
+    },
+    {
+      "front": "atroce (adj(f))",
+      "back": "atrocious"
+    },
+    {
+      "front": "redevenir (v)",
+      "back": "to become again"
+    },
+    {
+      "front": "le recours (nm(pl))",
+      "back": "resort, recourse"
+    },
+    {
+      "front": "comique (nadj(f))",
+      "back": "comical; comic, comedian"
+    },
+    {
+      "front": "imaginaire (nadj(f))",
+      "back": "imaginary"
+    },
+    {
+      "front": "revivre (v)",
+      "back": "to live again, come back life, revive"
+    },
+    {
+      "front": "repasser (v)",
+      "back": "to cross again, retake, show again, iron"
+    },
+    {
+      "front": "soulever (v)",
+      "back": "to lift up"
+    },
+    {
+      "front": "entretenir (v)",
+      "back": "to maintain"
+    },
+    {
+      "front": "supplémentaire (adj(f))",
+      "back": "additional"
+    },
+    {
+      "front": "honteux (adj(pl))",
+      "back": "ashamed, shameful"
+    },
+    {
+      "front": "retrait (nadj)",
+      "back": "withdrawal"
+    },
+    {
+      "front": "mécanique (adj(f))",
+      "back": "mechanical"
+    },
+    {
+      "front": "reprocher (v)",
+      "back": "to blame, reproach"
+    },
+    {
+      "front": "exemplaire (nadj(f))",
+      "back": "exemplary; copy"
+    },
+    {
+      "front": "épouvantable (adj(f))",
+      "back": "terrible, appalling, dreadful"
+    },
+    {
+      "front": "le semestre (nm)",
+      "back": "semester, six-month period"
+    },
+    {
+      "front": "optimiste (nadj(f))",
+      "back": "optimistic"
+    },
+    {
+      "front": "la représentation (nf)",
+      "back": "representation"
+    },
+    {
+      "front": "économique (nadj(f))",
+      "back": "economic, economical"
+    },
+    {
+      "front": "le reportage (nm)",
+      "back": "report, reporting"
+    },
+    {
+      "front": "contenir (v)",
+      "back": "to contain"
+    },
+    {
+      "front": "le excès (nm(pl))",
+      "back": "excess, surplus, abuse"
+    },
+    {
+      "front": "ironique (adj(f))",
+      "back": "ironic"
+    },
+    {
+      "front": "le flux (nm(pl))",
+      "back": "flow"
+    },
+    {
+      "front": "secouer (v)",
+      "back": "to shake"
+    },
+    {
+      "front": "visible (adj(f))",
+      "back": "visible, obvious"
+    },
+    {
+      "front": "horaire (nadj(f))",
+      "back": "schedule, timetable, hourly"
+    },
+    {
+      "front": "reproduire (v)",
+      "back": "to reproduce, repeat"
+    },
+    {
+      "front": "toxique (nadj(f))",
+      "back": "toxic, toxin"
+    },
+    {
+      "front": "le reproche (nm)",
+      "back": "reproach"
+    },
+    {
+      "front": "semer (v)",
+      "back": "to sow, scatter, spread"
+    },
+    {
+      "front": "acquis (nadj(pl))",
+      "back": "acquired, experience"
+    },
+    {
+      "front": "sinistre (nadj(f))",
+      "back": "disaster, sinister"
+    },
+    {
+      "front": "soviétique (nadj(f))",
+      "back": "Soviet"
+    },
+    {
+      "front": "intermédiaire (nadj(f))",
+      "back": "intermediate, intermediary"
+    },
+    {
+      "front": "le recul (nm)",
+      "back": "backward movement, setback, slip"
+    },
+    {
+      "front": "indispensable (adj(f))",
+      "back": "essential"
+    },
+    {
+      "front": "comble (nadj(f))",
+      "back": "despair; summit, overmeasure; roof"
+    },
+    {
+      "front": "crédible (adj(f))",
+      "back": "credible"
+    },
+    {
+      "front": "hostile (adj(f))",
+      "back": "hostile"
+    },
+    {
+      "front": "épais (adj(pl),adv)",
+      "back": "thick, pitch dark, thickly"
+    },
+    {
+      "front": "le mépris (nm(pl))",
+      "back": "contempt, scorn, disdain"
+    },
+    {
+      "front": "préférable (adj(f))",
+      "back": "preferable"
+    },
+    {
+      "front": "bancaire (adj(f))",
+      "back": "banking"
+    },
+    {
+      "front": "atomique (adj(f))",
+      "back": "atomic"
+    },
+    {
+      "front": "convenable (adj(f))",
+      "back": "suitable, appropriate, correct, proper, acceptable"
+    },
+    {
+      "front": "asiatique (nadj(f))",
+      "back": "Asian"
+    },
+    {
+      "front": "rejeter (v)",
+      "back": "to reject"
+    },
+    {
+      "front": "semblable (nadj(f))",
+      "back": "similar"
+    },
+    {
+      "front": "reconstruire (v)",
+      "back": "to rebuild, reconstruct"
+    },
+    {
+      "front": "achever (v)",
+      "back": "to complete, finish, end"
+    },
+    {
+      "front": "le repère (nm)",
+      "back": "reference, benchmark, landmark"
+    },
+    {
+      "front": "équitable (adj(f))",
+      "back": "equitable, fair"
+    },
+    {
+      "front": "ambitieux (nadj(pl))",
+      "back": "ambitious, man with ambition"
+    },
+    {
+      "front": "le cheveu (nm)",
+      "back": "hair"
+    },
+    {
+      "front": "inacceptable (adj(f))",
+      "back": "unacceptabe"
+    },
+    {
+      "front": "similaire (adj(f))",
+      "back": "similar"
+    },
+    {
+      "front": "itinéraire (nadj(f))",
+      "back": "itinerary, route"
+    },
+    {
+      "front": "le reflet (nm)",
+      "back": "reflection, glint, highlight"
+    },
+    {
+      "front": "révolutionnaire (nadj(f))",
+      "back": "revolutionary"
+    },
+    {
+      "front": "universitaire (nadj(f))",
+      "back": "university, academic"
+    },
+    {
+      "front": "creux (nadj(pl))",
+      "back": "hollow, empty, hole"
+    },
+    {
+      "front": "spécifique (adj(f))",
+      "back": "specific"
+    },
+    {
+      "front": "le enseignement (nm)",
+      "back": "education, teaching"
+    },
+    {
+      "front": "la devise (nf)",
+      "back": "currency, motto, slogan"
+    },
+    {
+      "front": "identique (adj(f))",
+      "back": "identical"
+    },
+    {
+      "front": "spectaculaire (adj(f))",
+      "back": "spectacular"
+    },
+    {
+      "front": "terrestre (adj(f))",
+      "back": "land, earth"
+    },
+    {
+      "front": "polonais (nadj(pl))",
+      "back": "Polish"
+    },
+    {
+      "front": "immobile (adj(f))",
+      "back": "still, motionless"
+    },
+    {
+      "front": "insensible (adj(f))",
+      "back": "insensitive"
+    },
+    {
+      "front": "enthousiaste (adj(f))",
+      "back": "enthusiastic"
+    },
+    {
+      "front": "nocturne (nadj(f))",
+      "back": "nocturnal, nocturne"
+    },
+    {
+      "front": "retarder (v)",
+      "back": "to delay, hold up"
+    },
+    {
+      "front": "compréhensible (adj(f))",
+      "back": "comprehensible, understandable"
+    },
+    {
+      "front": "obligatoire (adj(f))",
+      "back": "mandatory, compulsory"
+    },
+    {
+      "front": "provisoire (adj(f))",
+      "back": "temporary, provisional"
+    },
+    {
+      "front": "la recommandation (nf)",
+      "back": "recommendation"
+    },
+    {
+      "front": "divers (adj(pl),det)",
+      "back": "diverse, various"
+    },
+    {
+      "front": "gigantesque (nadj(f))",
+      "back": "gigantic, immense"
+    },
+    {
+      "front": "suédois (nadj(pl))",
+      "back": "Swedish, Swede"
+    },
+    {
+      "front": "acceptable (adj(f))",
+      "back": "acceptable, satisfactory"
+    },
+    {
+      "front": "neutre (adj(f))",
+      "back": "neutral"
+    },
+    {
+      "front": "la collaboration (nf)",
+      "back": "collaboration"
+    },
+    {
+      "front": "le autobus (nm(pl))",
+      "back": "bus"
+    },
+    {
+      "front": "audacieux (nadj(pl))",
+      "back": "daring, audacious, bold"
+    },
+    {
+      "front": "la allusion (nf)",
+      "back": "allusion"
+    },
+    {
+      "front": "cynique (nadj(f))",
+      "back": "cynical, cynic"
+    },
+    {
+      "front": "odieux (adj(pl))",
+      "back": "hateful, odious"
+    },
+    {
+      "front": "esthétique (nadj(f))",
+      "back": "aesthetics, attractiveness; attractive"
+    },
+    {
+      "front": "féroce (adj(f))",
+      "back": "ferocious, fierce"
+    },
+    {
+      "front": "chaleureux (adj(pl))",
+      "back": "warm"
+    },
+    {
+      "front": "lumineux (adj(pl))",
+      "back": "luminous, illuminated; light"
+    },
+    {
+      "front": "la reprise (nf)",
+      "back": "resumption, renewal; time"
+    },
+    {
+      "front": "numérique (adj(f))",
+      "back": "numerical"
+    },
+    {
+      "front": "regagner (v)",
+      "back": "to win again, regain, get back, make up"
+    },
+    {
+      "front": "automobile (nadj(f))",
+      "back": "automobile"
+    },
+    {
+      "front": "chronique (nadj(f))",
+      "back": "chronic, column, page, chronicle"
+    },
+    {
+      "front": "dynamique (nadj(f))",
+      "back": "dynamic"
+    },
+    {
+      "front": "scandaleux (adj(pl))",
+      "back": "scandalous, outrageous"
+    },
+    {
+      "front": "susceptible (adj(f))",
+      "back": "sensitive, touchy"
+    },
+    {
+      "front": "atlantique (nadj(f))",
+      "back": "Atlantic"
+    },
+    {
+      "front": "diplomatique (nadj(f))",
+      "back": "diplomatic"
+    },
+    {
+      "front": "réciproque (nadj(f))",
+      "back": "mutual, reciprocal, the opposite"
+    },
+    {
+      "front": "la provenance (nf)",
+      "back": "origin, strange"
+    },
+    {
+      "front": "redoutable (adj(f))",
+      "back": "fearsome, formidable"
+    },
+    {
+      "front": "prévisible (adj(f))",
+      "back": "predictable, forseeable"
+    },
+    {
+      "front": "le revers (nm(pl))",
+      "back": "back, reverse, setback"
+    },
+    {
+      "front": "improbable (adj(f))",
+      "back": "unlikely, improbable"
+    },
+    {
+      "front": "recruter (v)",
+      "back": "to recruit"
+    },
+    {
+      "front": "parallèle (nadj(f))",
+      "back": "parallel, similar"
+    },
+    {
+      "front": "antique (nadj(f))",
+      "back": "antique, ancient"
+    },
+    {
+      "front": "le handicap (nm)",
+      "back": "handicap"
+    },
+    {
+      "front": "danois (nadj(pl))",
+      "back": "Danish, Dane"
+    },
+    {
+      "front": "concevoir (v)",
+      "back": "to conceive"
+    },
+    {
+      "front": "redire (v)",
+      "back": "to say again, repeat"
+    },
+    {
+      "front": "le sursis (nm(pl))",
+      "back": "reprieve, deferment"
+    },
+    {
+      "front": "préliminaire (nadj(f))",
+      "back": "preliminary, introductory"
+    },
+    {
+      "front": "remédier (v)",
+      "back": "to cure, remedy, put right"
+    },
+    {
+      "front": "barbare (nadj(f))",
+      "back": "barbaric; barbarian"
+    },
+    {
+      "front": "externe (nadj(f))",
+      "back": "external, outer"
+    },
+    {
+      "front": "regrettable (adj(f))",
+      "back": "unfortunate, regrettable"
+    },
+    {
+      "front": "le rejet (nm)",
+      "back": "rejection"
+    },
+    {
+      "front": "optique (nadj(f))",
+      "back": "optical, optic, perspective"
+    },
+    {
+      "front": "sonore (nadj(f))",
+      "back": "sound, resonant, sonorous, voiced"
+    },
+    {
+      "front": "souverain (nadj)",
+      "back": "sovereign, supreme ruler, monarch"
+    },
+    {
+      "front": "titulaire (nadj(f))",
+      "back": "holder, with tenure, occupant"
+    },
+    {
+      "front": "geler (v)",
+      "back": "to freeze, ice over, suspend"
+    },
+    {
+      "front": "réflexe (nadj(f))",
+      "back": "reflex"
+    },
+    {
+      "front": "redonner (v)",
+      "back": "to give back, return, give more"
+    },
+    {
+      "front": "courbe (nadj(f))",
+      "back": "curve, curved"
+    },
+    {
+      "front": "retomber (v)",
+      "back": "to fall again, fall down again"
+    },
+    {
+      "front": "la reproduction (nf)",
+      "back": "reproduction"
+    },
+    {
+      "front": "souple (adj(f))",
+      "back": "supple, agile, soft, floppy, flexible"
+    },
+    {
+      "front": "médiocre (nadj(f))",
+      "back": "mediocre, second-rate"
+    },
+    {
+      "front": "philosophe (nadj(f))",
+      "back": "philosopher"
+    },
+    {
+      "front": "le diplomate (nadj(f),nm)",
+      "back": "diplomat, diplomatic"
+    },
+    {
+      "front": "organique (adj(f))",
+      "back": "organic"
+    },
+    {
+      "front": "le recrutement (nm)",
+      "back": "recruiting, recruitment"
+    },
+    {
+      "front": "démocrate (nadj(f))",
+      "back": "democrat, democratic"
+    },
+    {
+      "front": "portugais (nadj(pl))",
+      "back": "Portuguese"
+    },
+    {
+      "front": "recommander (v)",
+      "back": "to recommend"
+    },
+    {
+      "front": "olympique (adj(f))",
+      "back": "Olympic"
+    },
+    {
+      "front": "publicitaire (nadj(f))",
+      "back": "advertising, promotional"
+    },
+    {
+      "front": "la reconstruction (nf)",
+      "back": "reconstruction"
+    },
+    {
+      "front": "bourgeois (nadj(pl))",
+      "back": "middle class"
+    },
+    {
+      "front": "stratégique (adj(f))",
+      "back": "strategic"
+    },
+    {
+      "front": "favorable (adj(f))",
+      "back": "favorable"
+    },
+    {
+      "front": "recueillir (v)",
+      "back": "to collect, gather"
+    },
+    {
+      "front": "repenser (v)",
+      "back": "to rethink"
+    },
+    {
+      "front": "décevant (adj)",
+      "back": "disappointing"
+    },
+    {
+      "front": "la relance (nf)",
+      "back": "boost, reminder, recovery"
+    },
+    {
+      "front": "relativement (adv)",
+      "back": "relatively"
+    },
+    {
+      "front": "poétique (nadj(f))",
+      "back": "poetic, poetical, poetics"
+    },
+    {
+      "front": "sceptique (nadj(f))",
+      "back": "sceptical, sceptic"
+    },
+    {
+      "front": "respectueux (adj(pl))",
+      "back": "respectful"
+    },
+    {
+      "front": "apte (adj(f))",
+      "back": "capable"
+    },
+    {
+      "front": "bénévole (nadj(f))",
+      "back": "volunteer, voluntary, unpaid"
+    },
+    {
+      "front": "bénéfique (adj(f))",
+      "back": "beneficial"
+    },
+    {
+      "front": "littéraire (nadj(f))",
+      "back": "literary"
+    },
+    {
+      "front": "originaire (adj(f))",
+      "back": "original, first, native to"
+    },
+    {
+      "front": "prioritaire (nadj(f))",
+      "back": "priority, having priority, having right of way"
+    },
+    {
+      "front": "autoritaire (adj(f))",
+      "back": "authoritarian"
+    },
+    {
+      "front": "refermer (v)",
+      "back": "to close again, shut again, close up"
+    },
+    {
+      "front": "collaborer (v)",
+      "back": "to collaborate, contribute"
+    },
+    {
+      "front": "considérable (adj(f))",
+      "back": "considerable, significant"
+    },
+    {
+      "front": "relancer (v)",
+      "back": "to throw back, restart, relaunch"
+    },
+    {
+      "front": "la annexe (adj(f),nf)",
+      "back": "annex, appendix, related issue"
+    },
+    {
+      "front": "meuble (nadj(f))",
+      "back": "piece of furniture"
+    },
+    {
+      "front": "symbolique (nadj(f))",
+      "back": "symbolic"
+    },
+    {
+      "front": "démocratique (adj(f))",
+      "back": "democratic"
+    },
+    {
+      "front": "retraité (nadj)",
+      "back": "retired"
+    },
+    {
+      "front": "pharmaceutique (nadj(f))",
+      "back": "pharmaceutical"
+    },
+    {
+      "front": "redresser (v)",
+      "back": "to straighten, set right, redress, turn around"
+    },
+    {
+      "front": "précoce (adj(f))",
+      "back": "early, precocious"
+    },
+    {
+      "front": "énergétique (nadj(f))",
+      "back": "energic, vigorous"
+    },
+    {
+      "front": "millénaire (nadj(f))",
+      "back": "millennium, thousand-year- old"
+    },
+    {
+      "front": "rentable (adj(f))",
+      "back": "profitable"
+    },
+    {
+      "front": "renouveler (v)",
+      "back": "to renew"
+    },
+    {
+      "front": "élémentaire (adj(f))",
+      "back": "elementary, rudimentary, basic"
+    },
+    {
+      "front": "comparable (adj(f))",
+      "back": "comparable"
+    },
+    {
+      "front": "communautaire (adj(f))",
+      "back": "community, communal"
+    },
+    {
+      "front": "durable (adj(f))",
+      "back": "durable, long-lasting"
+    },
+    {
+      "front": "la mœurs (nfpl)",
+      "back": "morals, customs, habits, manners, ways"
+    },
+    {
+      "front": "maritime (adj(f))",
+      "back": "maritime"
+    },
+    {
+      "front": "belge (nadj(f))",
+      "back": "Belgian"
+    },
+    {
+      "front": "humanitaire (adj(f))",
+      "back": "humanitarian"
+    },
+    {
+      "front": "coûteux (adj(pl))",
+      "back": "expensive, costly"
+    },
+    {
+      "front": "combustible (nadj(f))",
+      "back": "fuel, combustible"
+    },
+    {
+      "front": "viable (adj(f))",
+      "back": "viable, workable"
+    },
+    {
+      "front": "conforme (adj(f))",
+      "back": "conform"
+    },
+    {
+      "front": "reconduire (v)",
+      "back": "to renew, drive back"
+    },
+    {
+      "front": "accessible (adj(f))",
+      "back": "accessible, approachable"
+    },
+    {
+      "front": "prélever (v)",
+      "back": "to impose, levy, withdraw, remove"
+    },
+    {
+      "front": "rhétorique (nadj(f))",
+      "back": "rhetorical, rhetoric"
+    },
+    {
+      "front": "climatique (adj(f))",
+      "back": "climatic"
+    },
+    {
+      "front": "reconstituer (v)",
+      "back": "to reconstitute, restore, reconstruct"
+    },
+    {
+      "front": "incompréhensible (adj(f))",
+      "back": "incomprehensible"
+    },
+    {
+      "front": "le biais (nm(pl))",
+      "back": "way, device; bias"
+    },
+    {
+      "front": "catastrophique (adj(f))",
+      "back": "catastrophic, disastrous"
+    },
+    {
+      "front": "socialiste (nadj(f))",
+      "back": "socialist"
+    },
+    {
+      "front": "sanitaire (nadj(f))",
+      "back": "health, sanitary, medical"
+    },
+    {
+      "front": "le suspens (nm(pl))",
+      "back": "suspension, abeyance"
+    },
+    {
+      "front": "graphique (nadj(f))",
+      "back": "graph, graphic"
+    },
+    {
+      "front": "intolérable (adj(f))",
+      "back": "intolerable"
+    },
+    {
+      "front": "médiatique (adj(f))",
+      "back": "media"
+    },
+    {
+      "front": "propice (adj(f))",
+      "back": "favorable, auspicious propitious"
+    },
+    {
+      "front": "le quota (nm)",
+      "back": "quota"
+    },
+    {
+      "front": "relire (v)",
+      "back": "to reread, proofread"
+    },
+    {
+      "front": "soucieux (adj(pl))",
+      "back": "concerned, worried"
+    },
+    {
+      "front": "touristique (adj(f))",
+      "back": "holiday, tourist"
+    },
+    {
+      "front": "pessimiste (nadj(f))",
+      "back": "pessimistic; pessimist"
+    },
+    {
+      "front": "rigide (adj(f))",
+      "back": "rigid, stiff"
+    },
+    {
+      "front": "mathématique (nadj(f))",
+      "back": "mathematical; mathematics"
+    },
+    {
+      "front": "hebdomadaire (nadj(f))",
+      "back": "weekly"
+    },
+    {
+      "front": "agricole (adj(f))",
+      "back": "agricultural, farming"
+    },
+    {
+      "front": "technologique (adj(f))",
+      "back": "technological"
+    },
+    {
+      "front": "le surplus (nm(pl))",
+      "back": "surplus"
+    },
+    {
+      "front": "autonome (nadj(f))",
+      "back": "autonomous, independent"
+    },
+    {
+      "front": "serbe (nadj(f))",
+      "back": "Serbian"
+    },
+    {
+      "front": "caractéristique (nadj(f))",
+      "back": "characteristic"
+    },
+    {
+      "front": "recouvrir (v)",
+      "back": "to cover, hide, conceal"
+    },
+    {
+      "front": "projeter (v)",
+      "back": "to plan, project, throw out"
+    },
+    {
+      "front": "notoire (adj(f))",
+      "back": "notorious, well-known"
+    },
+    {
+      "front": "théorique (adj(f))",
+      "back": "theoretical"
+    },
+    {
+      "front": "prestigieux (adj(pl))",
+      "back": "prestigious"
+    },
+    {
+      "front": "bénéficiaire (nadj(f))",
+      "back": "beneficiary"
+    },
+    {
+      "front": "synonyme (nadj(f))",
+      "back": "synonymous; synonym"
+    },
+    {
+      "front": "la ressource (nf)",
+      "back": "resource"
+    },
+    {
+      "front": "relatif (nadj)",
+      "back": "relative"
+    },
+    {
+      "front": "le au-delà (adv,nmi)",
+      "back": "beyond"
+    },
+    {
+      "front": "parlementaire (nadj(f))",
+      "back": "parliamentary; member of parliament"
+    },
+    {
+      "front": "au-dessus (adv)",
+      "back": "above"
+    },
+    {
+      "front": "provenir (v)",
+      "back": "to be from, come from"
+    },
+    {
+      "front": "monétaire (adj(f))",
+      "back": "monetary"
+    },
+    {
+      "front": "le rendez-vous (nm(pl))",
+      "back": "appointment"
+    },
+    {
+      "front": "refléter (v)",
+      "back": "to reflect"
+    },
+    {
+      "front": "illustrer (v)",
+      "back": "to illustrate"
+    },
+    {
+      "front": "québécois (nadj(pl))",
+      "back": "Quebecker, Quebecer, Québécois"
+    },
+    {
+      "front": "budgétaire (adj(f))",
+      "back": "budgetary"
+    },
+    {
+      "front": "détenir (v)",
+      "back": "to hold, detain"
+    },
+    {
+      "front": "multiple (nadj(f))",
+      "back": "multiple"
+    },
+    {
+      "front": "réformiste (nadj(f))",
+      "back": "reformist"
+    },
+    {
+      "front": "là-dessus (adv)",
+      "back": "on top, about it"
+    },
+    {
+      "front": "la revendication (nf)",
+      "back": "claim, demand"
+    },
+    {
+      "front": "recourir (v)",
+      "back": "to turn to, run again"
+    },
+    {
+      "front": "la souveraineté (nf)",
+      "back": "sovereignty"
+    },
+    {
+      "front": "autochtone (nadj(f))",
+      "back": "native, indigenous peoples"
+    },
+    {
+      "front": "préalable (nadj(f))",
+      "back": "prior, previous, preliminary, prerequisite"
+    },
+    {
+      "front": "le collaborateur (nm)",
+      "back": "associate, fellow worker, contributor, collaborator"
+    },
+    {
+      "front": "regrouper (v)",
+      "back": "to group together, regroup"
+    },
+    {
+      "front": "complémentaire (adj(f))",
+      "back": "complementary, supplementary"
+    },
+    {
+      "front": "rigoureux (adj(pl))",
+      "back": "rigorous, harsh, strict"
+    },
+    {
+      "front": "revêtir (v)",
+      "back": "to take on, assume"
+    },
+    {
+      "front": "variable (nadj(f))",
+      "back": "variable"
+    },
+    {
+      "front": "contradictoire (adj(f))",
+      "back": "contradictory, conflicting"
+    },
+    {
+      "front": "revendiquer (v)",
+      "back": "to claim"
+    },
+    {
+      "front": "mixte (adj(f))",
+      "back": "mixed"
+    },
+    {
+      "front": "syndical (adj)",
+      "back": "(trade-) union"
+    },
+    {
+      "front": "unanime (adj(f))",
+      "back": "unanimous"
+    },
+    {
+      "front": "islamique (adj(f))",
+      "back": "Islamic"
+    },
+    {
+      "front": "ethnique (nadj(f))",
+      "back": "ethnic"
+    },
+    {
+      "front": "systématique (nadj(f))",
+      "back": "systematic"
+    },
+    {
+      "front": "francophone (adj(f))",
+      "back": "French-speaking, French speaker, francophone"
+    },
+    {
+      "front": "le consensus (nm(pl))",
+      "back": "consensus"
+    },
+    {
+      "front": "le demandeur (nm)",
+      "back": "seeker, complainant"
+    },
+    {
+      "front": "homologue (adj(f))",
+      "back": "counterpart, homologue"
+    },
+    {
+      "front": "applicable (adj(f))",
+      "back": "applicable"
+    },
+    {
+      "front": "la demi-heure (nf)",
+      "back": "half an hour"
+    },
+    {
+      "front": "acheminer (v)",
+      "back": "to forward, dispatch, transport"
+    },
+    {
+      "front": "géographique (adj(f))",
+      "back": "geographic, geographical"
+    },
+    {
+      "front": "le renouvellement (nm)",
+      "back": "replacement, recurrence, repetition"
+    },
+    {
+      "front": "déceler (v)",
+      "back": "to discover, detect"
+    },
+    {
+      "front": "représentatif (adj)",
+      "back": "representative"
+    },
+    {
+      "front": "resserrer (v)",
+      "back": "to tighten up, strengthen"
+    },
+    {
+      "front": "incompatible (adj(f))",
+      "back": "incompatible"
+    },
+    {
+      "front": "reléguer (v)",
+      "back": "to relegate"
+    },
+    {
+      "front": "arbitraire (nadj(f))",
+      "back": "arbitrary"
+    },
+    {
+      "front": "le acheminement (nm)",
+      "back": "routing, shipment"
+    },
+    {
+      "front": "notable (nadj(f))",
+      "back": "notable, noteworthy"
+    },
+    {
+      "front": "tchèque (nadj(f))",
+      "back": "Czech"
+    },
+    {
+      "front": "là-dedans (adv)",
+      "back": "inside, in it"
+    },
+    {
+      "front": "explicite (adj(f))",
+      "back": "explicitly"
+    },
+    {
+      "front": "précaire (adj(f))",
+      "back": "precarious, makeshift"
+    },
+    {
+      "front": "linguistique (nadj(f))",
+      "back": "linguistic, linguistics"
+    },
+    {
+      "front": "souhaitable (adj(f))",
+      "back": "desirable"
+    },
+    {
+      "front": "transitoire (adj(f))",
+      "back": "transient, interim, provisional"
+    },
+    {
+      "front": "au-dessous (adv)",
+      "back": "underneath"
+    },
+    {
+      "front": "le entre-temps (adv,nm(pl))",
+      "back": "meanwhile, in the meantime"
+    },
+    {
+      "front": "libanais (nadj(pl))",
+      "back": "Lebanese"
+    },
+    {
+      "front": "minime (nadj(f))",
+      "back": "minor, minimal"
+    },
+    {
+      "front": "problématique (nadj(f))",
+      "back": "problematic; problem"
+    },
+    {
+      "front": "yougoslave (nadj(f))",
+      "back": "Yugoslav, Yugoslavian"
+    },
+    {
+      "front": "contrevenant (nadj)",
+      "back": "offender, offending"
+    },
+    {
+      "front": "sommaire (nadj(f))",
+      "back": "summary, brief, cursory"
+    },
+    {
+      "front": "le vingt-quatre (det,nmi)",
+      "back": "twenty four"
+    },
+    {
+      "front": "séparatiste (nadj(f))",
+      "back": "separatist"
+    },
+    {
+      "front": "nationaliste (nadj(f))",
+      "back": "nationalist"
+    },
+    {
+      "front": "écologique (adj(f))",
+      "back": "ecological"
+    },
+    {
+      "front": "irréversible (adj(f))",
+      "back": "irreversible"
+    },
+    {
+      "front": "replier (v)",
+      "back": "to fold, roll up, fold up, withdraw"
+    },
+    {
+      "front": "minoritaire (nadj(f))",
+      "back": "minority"
+    },
+    {
+      "front": "idéologique (adj(f))",
+      "back": "ideological"
+    },
+    {
+      "front": "majoritaire (adj(f))",
+      "back": "majority"
+    },
+    {
+      "front": "le redressement (nm)",
+      "back": "straightening up, upturn, righting"
+    },
+    {
+      "front": "négligeable (adj(f))",
+      "back": "negligible, trivial"
+    },
+    {
+      "front": "la gestionnaire, le gestionnaire (adj(f),nm,nf)",
+      "back": "administrator, administrative"
+    },
+    {
+      "front": "polémique (nadj(f))",
+      "back": "controversial, controversy"
+    },
+    {
+      "front": "vigoureux (adj(pl))",
+      "back": "vigorous"
+    },
+    {
+      "front": "philosophique (adj(f))",
+      "back": "philosophical"
+    },
+    {
+      "front": "avantageux (nadj(pl))",
+      "back": "profitable, worthwhile, advantageous, attractive"
+    },
+    {
+      "front": "réglementaire (adj(f))",
+      "back": "regulation, control, statutory"
+    },
+    {
+      "front": "analogue (nadj(f))",
+      "back": "similar, analogous"
+    },
+    {
+      "front": "le cessez-le-feu (nmi)",
+      "back": "ceasefire"
+    },
+    {
+      "front": "indigène (nadj(f))",
+      "back": "native, local"
+    },
+    {
+      "front": "innombrable (adj(f))",
+      "back": "innumerable, countless"
+    },
+    {
+      "front": "désireux (adj(pl))",
+      "back": "avid for, anxious to, desirous of"
+    },
+    {
+      "front": "la retombée (nf)",
+      "back": "fallout, consequences, effects"
+    },
+    {
+      "front": "chiite (nadj(f))",
+      "back": "Shiite"
+    },
+    {
+      "front": "relater (v)",
+      "back": "to relate, recount"
+    },
+    {
+      "front": "le renouveau (nm)",
+      "back": "renewal"
+    },
+    {
+      "front": "néerlandais (nadj(pl))",
+      "back": "Dutch"
+    },
+    {
+      "front": "le secrétariat (nm)",
+      "back": "secretaryship, secretariat, secretarial offices, secretary’s office"
+    },
+    {
+      "front": "basque (nadj(f))",
+      "back": "Basque"
+    },
+    {
+      "front": "la illustration (nf)",
+      "back": "illustration"
+    },
+    {
+      "front": "néfaste (adj(f))",
+      "back": "harmful, ill-fated"
+    },
+    {
+      "front": "kurde (nadj(f))",
+      "back": "Kurd, Kurdish"
+    },
+    {
+      "front": "le regroupement (nm)",
+      "back": "regrouping, reassembly"
+    },
+    {
+      "front": "désastreux (adj(pl))",
+      "back": "disastrous"
+    },
+    {
+      "front": "replacer (v)",
+      "back": "to replace, put back"
+    },
+    {
+      "front": "démographique (adj(f))",
+      "back": "demographic"
+    },
+    {
+      "front": "textile (nadj(f))",
+      "back": "textile"
+    },
+    {
+      "front": "retrancher (v)",
+      "back": "to deduct, remove; to entrench"
+    },
+    {
+      "front": "sécuritaire (adj(f))",
+      "back": "safe"
+    },
+    {
+      "front": "énergique (adj(f))",
+      "back": "energetic"
+    },
+    {
+      "front": "défavorable (adj(f))",
+      "back": "unfavorable"
+    },
+    {
+      "front": "albanais (nadj(pl))",
+      "back": "Albanian"
+    },
+    {
+      "front": "civique (adj(f))",
+      "back": "civil; civics"
+    },
+    {
+      "front": "bosniaque (nadj(f))",
+      "back": "Bosnian"
+    },
+    {
+      "front": "solidaire (adj(f))",
+      "back": "interdependent, jointly dependent"
+    },
+    {
+      "front": "ferroviaire (adj(f))",
+      "back": "railway, rail"
+    }
+  ]
+}
