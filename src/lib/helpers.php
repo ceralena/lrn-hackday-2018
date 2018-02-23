@@ -12,7 +12,7 @@ function getConsumerSecret() {
 }
 
 function getSeed() {
-    return 'v2';
+    return 'v3';
 }
 
 function getActivityId($languageConfig) {
