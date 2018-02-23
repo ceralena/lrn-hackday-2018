@@ -21,7 +21,7 @@ function (_, $, template) {
         var question = questions[ids && ids[0]];
         var $assess = $('.hackday-assess');
 
-        if (question) {
+        if (question && assessApp.flashcardState.speech) {
             function checkVisibility() {
                 if ($assess.is(':visible')) {
                     clearInterval(interval);
@@ -131,7 +131,9 @@ function (_, $, template) {
                 $card.find('.validation-message').html('Incorrect');
             }
 
-            this.playAudio('en', message);
+            if (assessApp.flashcardState.speech) {
+                this.playAudio('en', message);
+            }
         },
 
         clearValidation() {

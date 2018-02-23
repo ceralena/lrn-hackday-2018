@@ -113,6 +113,7 @@ $signedRequest = $init->generate();
         sessionId: "<?php echo $sessionId; ?>",
         currentWordsCount: "<?php echo $initialWordsCount; ?>",
         cardsPerFetch: "<?php echo $initialWordsCount; ?>",
+        speech: true,
     };
 
     function fetchMoreCards() {
