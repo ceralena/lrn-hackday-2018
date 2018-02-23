@@ -11,8 +11,8 @@ function getConsumerSecret() {
 	return '74c5fd430cf1242a527f6223aebd42d30464be22';
 }
 
-function getActivityId() {
-    return 'hackday2018-flashcard';
+function getActivityId($languageConfig) {
+    return 'Flash Card: ' . $languageConfig['name'];
 }
 
 /**
@@ -54,12 +54,12 @@ function generateSessionId($langauge, $userId) {
 	*/
 }
 
-function getLanguageConfig($shortLabel) {
-	$languageConfigs = [
-		'ja' => [
-			'name' => 'Japanese',
-			'shortCode' => 'ja'
-		],
+function getAllLanguageConfigs() {
+    return [
+        'ja' => [
+            'name' => 'Japanese',
+            'shortCode' => 'ja'
+        ],
         'es' => [
             'name' => 'Spanish',
             'shortCode' => 'es'
@@ -68,7 +68,11 @@ function getLanguageConfig($shortLabel) {
             'name' => 'French',
             'shortCode' => 'fr'
         ]
-	];
+    ];
+}
+
+function getLanguageConfig($shortLabel) {
+    $languageConfigs = getAllLanguageConfigs();
 
 	if (!isset($languageConfigs[$shortLabel])) {
 		throw new \Exception('unknown language label: ' . $shortLabel);
@@ -80,10 +84,15 @@ function getLanguageConfig($shortLabel) {
 function generateSecurity($userId, $domain) {
 	$timestamp = gmdate('Ymd-Hi');
 
-	return [
+	$sec = [
 		'consumer_key' => getConsumerKey(),
 		'domain' => $domain,
 		'timestamp' => $timestamp,
-		'user_id' => $userId
 	];
+
+	if (!is_null($userId)) {
+        $sec['user_id'] = $userId;
+    }
+
+    return $sec;
 }

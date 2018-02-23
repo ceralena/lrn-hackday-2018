@@ -5,9 +5,8 @@ require __DIR__ . '/lib/helpers.php';
 require __DIR__ . '/lib/data.php';
 
 use LearnositySdk\Request\Init;
-use LearnositySdk\Utils\Uuid;
 
-$initialWordsCount = 10;
+$initialWordsCount = 5;
 
 $domain = $_SERVER['SERVER_NAME'];
 
@@ -44,7 +43,6 @@ $name = 'Learnosity LRN ' . $languageConfig['name'];
 
 $request = [
 	'name' => $name,
-	'state' => 'resume',
 	'title' => 'Learnosity Flash Cards',
 	'subtitle' => 'Language: ' . $languageConfig['name'],
     'navigation' => [
@@ -60,12 +58,13 @@ $request = [
 	'questionsApiActivity' => [
 		'type' => 'submit_practice',
 		'state' => 'resume',
-		'id' => getActivityId(),
-		'name' => $name,
+        'captureOnResumeError' => true,
+		'id' => getActivityId($languageConfig),
+		'name' => getActivityId($languageConfig),
 		'course_id' => $courseId,
 		'session_id' => $sessionId,
 		'questions' => $questions,
-	]
+	],
 ];
 
 $init = new Init('assess', $security, getConsumerSecret(), $request);
@@ -94,7 +93,7 @@ $signedRequest = $init->generate();
 
 <div class="hackday-assess"></div>
 
-<script src="https://assess-au.learnosity.com"></script>
+<script src="https://assess.learnosity.com"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
     let eventOptions = {
