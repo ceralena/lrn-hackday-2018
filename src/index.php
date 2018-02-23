@@ -45,7 +45,7 @@ $name = 'Learnosity LRN ' . $languageConfig['name'];
 
 $request = [
 	'name' => $name,
-	'state' => 'initial',
+	'state' => 'resume',
 	'title' => 'Learnosity Flash Cards',
 	'subtitle' => 'Language: ' . $languageConfig['name'],
     'navigation' => [
@@ -60,7 +60,7 @@ $request = [
 	'items' => $items,
 	'questionsApiActivity' => [
 		'type' => 'submit_practice',
-		'state' => 'initial',
+		'state' => 'resume',
 		'id' => 'hi', // TODO(cera) - what the heck is this?
 		'name' => $name,
 		'course_id' => $courseId,
