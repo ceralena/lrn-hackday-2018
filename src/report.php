@@ -76,6 +76,10 @@ $signedRequest = $init->generate();
 
 <script>
     var reportsApp = LearnosityReports.init(<?php echo $signedRequest; ?>, '.hackday-reports');
+
+    window.setTimeout(() => {
+        window.location.reload();
+    }, 5000);
 </script>
 
 
