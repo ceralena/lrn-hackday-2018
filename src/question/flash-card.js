@@ -43,16 +43,9 @@ function (_, $, template) {
         assessApp.on('item:changed', function () {
             var ids = assessApp.getCurrentItem().response_ids;
             var question = questions[ids && ids[0]];
-            var $assess = $('.hackday-assess');
 
-            if (question && assessApp.flashcardState.speech) {
-                function checkVisibility() {
-                    if ($assess.is(':visible')) {
-                        clearInterval(interval);
-                        question.playLabelAudio();
-                    }
-                }
-                var interval = setInterval(checkVisibility, 200);
+            if (question) {
+                question.onShow();
             }
         });
 
@@ -208,6 +201,12 @@ function (_, $, template) {
                 playPromises.splice(index, 1);
             });
         });
+    };
+
+    CustomQuestion.prototype.onShow = function () {
+        if (assessApp.flashcardState.speech) {
+            this.playLabelAudio();
+        }
     };
 
     /**
