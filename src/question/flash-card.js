@@ -7,8 +7,6 @@ function (_, $, template) {
 
     var questions = {};
 
-    var audios = {};
-
     var playPromises = [];
 
     const parenRgx = /\s?[\(\[].+?[\)\]]$/;
@@ -161,27 +159,27 @@ function (_, $, template) {
         },
 
         playAudio(lang, text) {
-            var key = lang + text;
             var ssml = '';
 
             this.stopAllAudio();
 
-            if (!audios[key]) {
-                if (text.indexOf('<') > -1) {
-                    text = `<speak>${text}</speak>`;
-                    ssml = 'ssml=true&';
-                }
-
-                audios[key] = new Audio([`/speech.php?${ssml}lang=${lang}&text=${text}`]);
+            if (text.indexOf('<') > -1) {
+                text = `<speak>${text}</speak>`;
+                ssml = 'ssml=true&';
             }
+
+            var audio = new Audio([`/speech.php?${ssml}lang=${lang}&text=${text}`]);
+
             playPromises.push({
-                element: audios[key],
-                promise: audios[key].play()
+                element: audio,
+                promise: audio.play()
             });
         },
 
         stopAllAudio() {
             _(playPromises).each(function (obj, index) {
+                obj.element.src = '';
+
                 obj.promise && obj.promise.then(function () {
                     obj.element.pause();
                     playPromises.splice(index, 1);
