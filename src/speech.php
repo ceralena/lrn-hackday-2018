@@ -12,7 +12,7 @@ require __DIR__ . '/../config.php';
 
 $voices = [
     'en' => 'Russell',
-    'ja' => 'Mizuki',
+    'ja' => 'Takumi',
     'fr' => 'Celine',
     'es' => 'Miguel',
 ];
